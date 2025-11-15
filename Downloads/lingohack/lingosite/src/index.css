@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --neo-border-width: 4px;
+  --neo-border-color: #000000;
+  --neo-shadow-sm: 4px 4px 0 0 rgba(0, 0, 0, 1);
+  --neo-shadow-md: 6px 6px 0 0 rgba(0, 0, 0, 1);
+  --neo-shadow-lg: 8px 8px 0 0 rgba(0, 0, 0, 1);
+  --neo-shadow-xl: 12px 12px 0 0 rgba(0, 0, 0, 1);
+
+  --accent-green: #00ff88;
+  --accent-yellow: #ffd600;
+  --accent-blue: #00d4ff;
+
+  --spacing-unit: 8px;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 40%;
+    --accent: 0 0% 0%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 0 0% 0%;
+    --radius: 0rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-black;
+  }
+}
+
+@layer utilities {
+  .neo-brutal-shadow-sm {
+    box-shadow: var(--neo-shadow-sm);
+  }
+
+  .neo-brutal-shadow-md {
+    box-shadow: var(--neo-shadow-md);
+  }
+
+  .neo-brutal-shadow-lg {
+    box-shadow: var(--neo-shadow-lg);
+  }
+
+  .neo-brutal-shadow-xl {
+    box-shadow: var(--neo-shadow-xl);
+  }
+
+  .neo-border {
+    border: var(--neo-border-width) solid var(--neo-border-color);
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-in forwards;
+    opacity: 0;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .letter-spacing-wide {
+    letter-spacing: 0.05em;
+  }
+
+  .letter-spacing-wider {
+    letter-spacing: 0.1em;
+  }
+}
