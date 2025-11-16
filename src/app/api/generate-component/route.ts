@@ -51,10 +51,14 @@ Return ONLY the JSX.`
     const sourceLocale = 'en'
     const targetLanguage = language || sourceLocale
 
+    // Remove inline JSX comments before sending content for localization
+    // so translated output doesn't contain React comment markers.
+    const translatableCode = cleanCode.replace(/\{\/\*[\s\S]*?\*\/\}/g, '')
+
     let localizedCode = cleanCode
 
     if (targetLanguage && targetLanguage !== sourceLocale) {
-      localizedCode = await translateGeneratedJsx(cleanCode, sourceLocale, targetLanguage)
+      localizedCode = await translateGeneratedJsx(translatableCode, sourceLocale, targetLanguage)
     }
 
     const project = createProject({

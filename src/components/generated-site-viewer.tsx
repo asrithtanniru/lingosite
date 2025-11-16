@@ -21,22 +21,29 @@ export function GeneratedSiteViewer({
     localizedCode && language !== 'en' ? 'localized' : 'source',
   )
 
-  const { wrappedCode, hasLocalized } = useMemo(() => {
+  const { wrappedSourceCode, cleanedLocalizedHtml, fallbackHtml, hasLocalized } = useMemo(() => {
     const trimmedSource = sourceCode?.trim?.() ?? ''
     const trimmedLocalized = localizedCode?.trim?.() ?? ''
     const hasLocalizedVariant =
       Boolean(trimmedLocalized.length > 0) && trimmedLocalized !== trimmedSource
 
-    const code = `function Component() {
+    const buildWrappedCode = (body: string) => `function Component() {
   return (
-    ${sourceCode}
+    ${body}
   );
 }
 
 render(<Component />);`
 
+    const stripJsxComments = (input: string) =>
+      input.replace(/\{\/\*[\s\S]*?\*\/\}/g, '')
+
     return {
-      wrappedCode: code,
+      wrappedSourceCode: buildWrappedCode(sourceCode),
+      cleanedLocalizedHtml: hasLocalizedVariant
+        ? stripJsxComments(localizedCode || '')
+        : '',
+      fallbackHtml: hasLocalizedVariant ? trimmedLocalized : trimmedSource,
       hasLocalized: hasLocalizedVariant && language !== 'en',
     }
   }, [language, localizedCode, sourceCode, view])
@@ -72,7 +79,7 @@ render(<Component />);`
 
       {view === 'source' && (
         <div className="border-2 border-border rounded-base bg-white p-8 min-h-[600px]">
-          <LiveProvider code={wrappedCode} noInline={true}>
+          <LiveProvider code={wrappedSourceCode} noInline={true}>
             <LivePreview />
             <LiveError className="mt-4 p-4 bg-red-50 border-2 border-red-500 rounded text-red-800 text-sm" />
           </LiveProvider>
@@ -83,7 +90,7 @@ render(<Component />);`
         <div className="border-2 border-border rounded-base bg-white p-8 min-h-[600px]">
           <div
             className="w-full h-full"
-            dangerouslySetInnerHTML={{ __html: localizedCode || sourceCode }}
+            dangerouslySetInnerHTML={{ __html: cleanedLocalizedHtml || fallbackHtml }}
           />
         </div>
       )}
