@@ -50,16 +50,44 @@ function NewProjectPage() {
     }
   }
 
-  const handleAiGenerate = (message: string) => {
+  const handleAiGenerate = async (message: string) => {
     setAiPrompt(message)
     setIsGenerating(true)
-    // Simulate AI generation
-    setTimeout(() => {
+
+    try {
+      const response = await fetch('/api/generate-component', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          prompt: message,
+          projectName: projectName || 'My Website',
+        }),
+      })
+
+      const data = await response.json()
+
+      if (data.success) {
+        // Store component in localStorage (temporary solution)
+        localStorage.setItem(`component_${data.component.id}`, JSON.stringify(data.component))
+
+        // Set project details
+        setProjectName(data.component.projectName)
+        setProjectUrl('mywebsite.com')
+        setIsGenerating(false)
+
+        // Navigate to live preview
+        router.push(data.liveUrl)
+      } else {
+        throw new Error(data.error || 'Failed to generate component')
+      }
+    } catch (error) {
+      console.error('Generation failed:', error)
       setIsGenerating(false)
-      setProjectName('My Amazing Website')
-      setProjectUrl('myamazingwebsite.com')
-      setStep(2)
-    }, 2000)
+      // Show error to user (you can add a toast notification here)
+      alert('Failed to generate component. Please try again.')
+    }
   }
 
   const handleCreate = () => {
