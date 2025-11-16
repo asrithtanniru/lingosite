@@ -11,7 +11,7 @@ const withLingo = lingoCompiler.next({
   sourceLocale: "en",
   targetLocales: ["hi", "te", "ta", "bn", "es", "fr", "de"],
   rsc: true,
-  useDirective: false,
+  useDirective: true,
   debug: false,
   models: "lingo.dev",
 })

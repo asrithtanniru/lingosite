@@ -1,4 +1,5 @@
 'use client'
+'use i18n'
 
 import { Card, CardContent } from '@/components/ui/card'
 import { Globe, Code, Eye, Rocket } from 'lucide-react'

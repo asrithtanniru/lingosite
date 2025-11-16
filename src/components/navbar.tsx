@@ -61,7 +61,7 @@ export function Navbar({ scrolled }: NavbarProps) {
                 <span className="hidden md:inline text-sm text-foreground/70">
                   {user.email}
                 </span>
-                <Button variant="outline" size="sm" onClick={() => signOut()}>
+                <Button variant="neutral" size="sm" onClick={() => signOut()}>
                   Sign Out
                 </Button>
               </>

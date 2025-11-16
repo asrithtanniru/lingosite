@@ -1,4 +1,5 @@
 'use client'
+'use i18n'
 
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Play } from 'lucide-react'

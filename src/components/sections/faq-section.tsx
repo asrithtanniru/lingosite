@@ -1,4 +1,5 @@
 'use client'
+'use i18n'
 
 import { useState } from 'react'
 import { Card, CardContent } from '@/components/ui/card'

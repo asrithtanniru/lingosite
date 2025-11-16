@@ -1,4 +1,5 @@
 'use client'
+'use i18n'
 
 import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
