@@ -96,7 +96,7 @@ npm start
 ## 🧪 Roadmap / Future Enhancements
 
 - Supabase authentication (Login + Accounts)
-- Store generated content in a database
+- Store generated content in a clean database
 - Export to PDF, text, or audio formats
 - AI-powered voice generation for songs/lessons
 - Public shareable content links
