@@ -1848,6 +1848,34 @@
           "content": "Available:"
         }
       }
+    },
+    "site/zqdgdja/page.tsx": {
+      "scopes": {
+        "3/body/6/argument/3/1": {
+          "type": "element",
+          "hash": "e409693607aaa7913aaf7b4345c55a76",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "English"
+        },
+        "3/body/6/argument/3/3": {
+          "type": "element",
+          "hash": "57f11b3ea863159e1cf08b22c6112bb3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "తెలుగు"
+        },
+        "4/declaration/body/0/argument/openingElement/0/value/expression": {
+          "type": "element",
+          "hash": "82b4ea7ed1439094d7c4be13aaba9a66",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Loading..."
+        }
+      }
     }
   }
 }
