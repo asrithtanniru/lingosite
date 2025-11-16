@@ -117,10 +117,14 @@ export function DashboardSection() {
             ))}
           </div>
 
-          {/* Publish Button */}
+          {/* Publish Button (disabled for now) */}
           <div className="mt-8 flex justify-center">
-            <Button size="lg" className="text-lg px-12 py-6 bg-chart-1 hover:bg-chart-1/90">
-              Publish All Changes
+            <Button
+              size="lg"
+              disabled
+              className="text-lg px-12 py-6 bg-muted text-foreground/60 cursor-not-allowed"
+            >
+              Publish feature coming soon
             </Button>
           </div>
         </div>

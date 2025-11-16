@@ -119,25 +119,12 @@ export default function LivePage() {
                 <Globe className="w-4 h-4 mr-2" />
                 Translate
               </Button>
-              <Button
-                size="sm"
-                onClick={() => setShowPublishModal(true)}
-                disabled={isPublished}
-                className={isPublished ? 'bg-green-600 hover:bg-green-700' : ''}
-              >
-                {isPublished ? 'Published' : 'Publish'}
+              <Button size="sm" disabled className="cursor-not-allowed bg-muted text-foreground/60">
+                Publish feature coming soon
               </Button>
             </div>
           </div>
         </div>
-        {isPublished && (
-          <div className="bg-green-600 text-white py-2 px-4 text-center text-sm">
-            Published successfully! View at{' '}
-            <a href={publishedUrl} target="_blank" rel="noopener noreferrer" className="underline font-bold">
-              {publishedUrl}
-            </a>
-          </div>
-        )}
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -184,42 +171,7 @@ export default function LivePage() {
         )}
       </main>
 
-      {/* Publish Modal */}
-      {showPublishModal && (
-        <div className="fixed inset-0 bg-overlay z-50 flex items-center justify-center p-4">
-          <Card className="max-w-md w-full">
-            <CardHeader>
-              <CardTitle>Publish Your Site</CardTitle>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-foreground/70">
-                Publishing will make your site live and accessible at the generated preview URL.
-              </p>
-              <div className="p-3 bg-secondary-background border-2 border-border rounded-base">
-                <p className="font-mono text-sm break-all">
-                  {componentData.projectName.toLowerCase().replace(/\s+/g, '-')}.linguallyric.app
-                </p>
-              </div>
-              <p className="text-sm text-foreground/70">
-                You can add a custom domain and enable more translations after publishing.
-              </p>
-              <div className="flex gap-3">
-                <Button
-                  variant="noShadow"
-                  className="flex-1"
-                  onClick={() => setShowPublishModal(false)}
-                  disabled={isPublishing}
-                >
-                  Cancel
-                </Button>
-                <Button className="flex-1" onClick={handlePublish} disabled={isPublishing}>
-                  {isPublishing ? 'Publishing...' : 'Publish Now'}
-                </Button>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      )}
+      {/* Publish flow disabled for now – feature coming soon */}
     </div>
   )
 }
