@@ -33,6 +33,7 @@ function NewProjectPage() {
   const [selectedLanguages, setSelectedLanguages] = useState<string[]>(['en'])
   const [isGenerating, setIsGenerating] = useState(false)
   const [aiPrompt, setAiPrompt] = useState('')
+  const [generationLanguage, setGenerationLanguage] = useState('en')
 
   // On mount, checking for prompt in query params
   useEffect(() => {
@@ -41,6 +42,18 @@ function NewProjectPage() {
       setAiPrompt(promptFromQuery)
     }
   }, [searchParams, aiPrompt])
+
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+    const match = document.cookie.match(/(?:^|; )lingo-locale=([^;]+)/)
+    const localeFromCookie = match?.[1]
+    if (localeFromCookie) {
+      setGenerationLanguage(localeFromCookie)
+      if (!selectedLanguages.includes(localeFromCookie)) {
+        setSelectedLanguages((prev) => [...prev, localeFromCookie])
+      }
+    }
+  }, [selectedLanguages])
 
   const toggleLanguage = (code: string) => {
     if (selectedLanguages.includes(code)) {
@@ -63,6 +76,7 @@ function NewProjectPage() {
         body: JSON.stringify({
           prompt: message,
           projectName: projectName || 'My Website',
+          language: generationLanguage || 'en',
         }),
       })
 
@@ -136,6 +150,34 @@ function NewProjectPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <span className="text-sm font-base text-foreground/70">Language</span>
+                  <div className="flex flex-wrap gap-2">
+                    {[
+                      { code: 'en', label: 'English' },
+                      { code: 'hi', label: 'Hindi' },
+                      { code: 'te', label: 'Telugu' },
+                      { code: 'ta', label: 'Tamil' },
+                      { code: 'bn', label: 'Bengali' },
+                      { code: 'es', label: 'Spanish' },
+                      { code: 'fr', label: 'French' },
+                      { code: 'de', label: 'German' },
+                    ].map((lang) => (
+                      <button
+                        key={lang.code}
+                        type="button"
+                        onClick={() => setGenerationLanguage(lang.code)}
+                        className={`px-3 py-1 rounded-base border text-xs font-base transition-colors ${
+                          generationLanguage === lang.code
+                            ? 'border-main bg-main/10'
+                            : 'border-border bg-secondary-background hover:bg-main/5'
+                        }`}
+                      >
+                        {lang.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
                 <PromptInputBox
                   onSend={handleAiGenerate}
                   placeholder="Describe your website... (e.g., 'A modern e-commerce site for selling handmade jewelry')"

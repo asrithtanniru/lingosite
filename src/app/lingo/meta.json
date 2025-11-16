@@ -1,0 +1,1853 @@
+{
+  "version": 0.1,
+  "files": {
+    "../components/generated-site-viewer.tsx": {
+      "scopes": {
+        "4/declaration/body/2/argument/1/expression/right": {
+          "type": "element",
+          "hash": "c6cb83c1adc63b1154bf9f89328b4348",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Translation for <element:span><function:language.toUpperCase/></element:span> is temporarily unavailable. Showing the original English version instead."
+        },
+        "4/declaration/body/2/argument/3/1/1": {
+          "type": "element",
+          "hash": "bfe269b76a62949b22ae98b63817ea84",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Original (English)"
+        },
+        "4/declaration/body/2/argument/3/1/3/expression/right": {
+          "type": "element",
+          "hash": "f4b82770d1327f5c1d6cd10c4b9aab9f",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Localized (<function:language.toUpperCase/>)"
+        }
+      }
+    },
+    "../components/landing-page.tsx": {
+      "scopes": {
+        "7/declaration/body/2/argument/5/1/1/1/1": {
+          "type": "element",
+          "hash": "fcc74af4fdc8d510a7eeeaeb1c8482e3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "LingoSite"
+        },
+        "7/declaration/body/2/argument/5/1/1/1/3": {
+          "type": "element",
+          "hash": "15e3f760e8075e8390788d8d90d9068e",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Build multilingual websites in seconds"
+        },
+        "7/declaration/body/2/argument/5/1/1/3/1": {
+          "type": "element",
+          "hash": "28d3ca945c696e746bbd18f61dee2ea6",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Privacy"
+        },
+        "7/declaration/body/2/argument/5/1/1/3/3": {
+          "type": "element",
+          "hash": "7c343c4b6da35cdf97a7e3433d89d9a9",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Terms"
+        },
+        "7/declaration/body/2/argument/5/1/1/3/5": {
+          "type": "element",
+          "hash": "1a313e3d08f61e2319817d8c23010e9c",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Contact"
+        },
+        "7/declaration/body/2/argument/5/1/3": {
+          "type": "element",
+          "hash": "77e584fbb6304b90b5574e459c127829",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "© 2024 LingoSite. All rights reserved."
+        }
+      }
+    },
+    "../components/navbar.tsx": {
+      "scopes": {
+        "5/declaration/body/0/argument/1/1/1/1/1": {
+          "type": "element",
+          "hash": "3665a8a3798690d838cdedaf34d0af11",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "L"
+        },
+        "5/declaration/body/0/argument/1/1/1/3": {
+          "type": "element",
+          "hash": "fcc74af4fdc8d510a7eeeaeb1c8482e3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "LingoSite"
+        },
+        "5/declaration/body/0/argument/1/1/3/1": {
+          "type": "element",
+          "hash": "2e0b8174a0461da84f5a7f647033db84",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Features"
+        },
+        "5/declaration/body/0/argument/1/1/3/3": {
+          "type": "element",
+          "hash": "08c6282114101e58c493045cdf251669",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Demo"
+        },
+        "5/declaration/body/0/argument/1/1/3/5": {
+          "type": "element",
+          "hash": "76e4c837b3edfdf329436e5b3f4e1867",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Dashboard"
+        },
+        "5/declaration/body/0/argument/1/1/3/7": {
+          "type": "element",
+          "hash": "738fac8c72f8df237b99d33e9108b00a",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "FAQ"
+        },
+        "5/declaration/body/0/argument/1/1/5/3/1": {
+          "type": "element",
+          "hash": "ec7b8f314fe9bc6591006707484ede61",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign In"
+        },
+        "5/declaration/body/0/argument/1/1/5/5/1": {
+          "type": "element",
+          "hash": "1d5f030c4ec9c869e647ae060518b948",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Get Started"
+        }
+      }
+    },
+    "../components/sections/dashboard-section.tsx": {
+      "scopes": {
+        "8/declaration/body/1/argument/1/1/1": {
+          "type": "element",
+          "hash": "21258532c9a4514750d9f6d1f83bf22f",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Your Command Center"
+        },
+        "8/declaration/body/1/argument/1/1/3": {
+          "type": "element",
+          "hash": "43473d8d0a3ebb1210ce59021f5c42cd",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Manage all your multilingual sites from one powerful dashboard"
+        },
+        "8/declaration/body/1/argument/1/5/11/1/expression/0/body/3/1/1/3": {
+          "type": "element",
+          "hash": "68df7e24a077ab2a1514a47109bb261e",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "{site.languages} Languages"
+        },
+        "8/declaration/body/1/argument/1/5/11/1/expression/0/body/3/1/3/3": {
+          "type": "element",
+          "hash": "6eb63c906c728b8f2534ed27627767c7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "{site.views} views"
+        },
+        "8/declaration/body/1/argument/1/5/11/1/expression/0/body/3/3": {
+          "type": "element",
+          "hash": "a6f24e3e655aacc5111d3089e52eaba0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Updated {site.updated}"
+        },
+        "8/declaration/body/1/argument/1/5/11/1/expression/0/body/3/5/1": {
+          "type": "element",
+          "hash": "a3a669e1d974d447d6015f8252f6f3ff",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Settings></element:Settings> Edit"
+        },
+        "8/declaration/body/1/argument/1/5/11/1/expression/0/body/3/5/3": {
+          "type": "element",
+          "hash": "56aabf9e1df97ae630b23ac166836b8a",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:ExternalLink></element:ExternalLink> View"
+        },
+        "8/declaration/body/1/argument/1/5/15/1": {
+          "type": "element",
+          "hash": "8f698fd7ab449b10a942f7bcfb7b7a11",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Publish All Changes"
+        },
+        "8/declaration/body/1/argument/1/5/3/1/1": {
+          "type": "element",
+          "hash": "70e605ea71690dc8edf5b871750071b1",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "My Sites"
+        },
+        "8/declaration/body/1/argument/1/5/3/1/3": {
+          "type": "element",
+          "hash": "3fb6f7433cb8d693bfff7776c532592a",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "{sites.length} sites • <function:sites.reduce/> languages"
+        },
+        "8/declaration/body/1/argument/1/5/3/3": {
+          "type": "element",
+          "hash": "ffe817184e5a463d0d92f3359590768f",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "+ New Site"
+        }
+      }
+    },
+    "../components/sections/demo-section.tsx": {
+      "scopes": {
+        "2/declaration/body/0/argument/1/1/1": {
+          "type": "element",
+          "hash": "0018bcb205692496cf6f548294ef7b03",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "See It In Action"
+        },
+        "2/declaration/body/0/argument/1/1/3": {
+          "type": "element",
+          "hash": "0a1803a91f1c8b661bc0b0a8d3c86d97",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Watch how LingoSite transforms a single page into a complete multilingual experience in under 60 seconds"
+        },
+        "2/declaration/body/0/argument/1/3/3/3": {
+          "type": "element",
+          "hash": "5b3c7601365b1d8c3f3722c29407db0e",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "1:23"
+        },
+        "2/declaration/body/0/argument/1/5/1": {
+          "type": "element",
+          "hash": "277daeca5e9fc0542c9745611dbe00f2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Try Building Your Site Now<element:ArrowRight></element:ArrowRight>"
+        },
+        "2/declaration/body/0/argument/1/5/3": {
+          "type": "element",
+          "hash": "0442618c4fef5a24f38a66f2fae170a8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Schedule a Demo"
+        }
+      }
+    },
+    "../components/sections/faq-section.tsx": {
+      "scopes": {
+        "5/declaration/body/1/argument/1/1/1": {
+          "type": "element",
+          "hash": "0c512dcd6d281cae1c2a1be01f1baad5",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Questions?<element:br></element:br><element:span>We've Got Answers.</element:span>"
+        },
+        "5/declaration/body/1/argument/1/1/3": {
+          "type": "element",
+          "hash": "8dcee2186d4762afeae1b00994d7cd71",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Everything you need to know about LingoSite"
+        },
+        "5/declaration/body/1/argument/1/7/1/1": {
+          "type": "element",
+          "hash": "ee729c08d2a801e54021ce5a2dadc395",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Still have questions?"
+        },
+        "5/declaration/body/1/argument/1/7/1/3": {
+          "type": "element",
+          "hash": "497c4dff6e68f607e7214506251b040c",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Our support team is here to help you succeed"
+        },
+        "5/declaration/body/1/argument/1/7/1/5/1": {
+          "type": "element",
+          "hash": "895b80ba5a2da86a9dbdee850d8c9bc7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Mail></element:Mail> Email Support"
+        },
+        "5/declaration/body/1/argument/1/7/1/5/3": {
+          "type": "element",
+          "hash": "ce51323bbc5be557423f666f84265058",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:MessageCircle></element:MessageCircle> Live Chat"
+        }
+      }
+    },
+    "../components/sections/features-section.tsx": {
+      "scopes": {
+        "3/declaration/body/0/argument/1/1/1": {
+          "type": "element",
+          "hash": "c1ae1713fd9d616ccca30eb2b967a1c0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Everything You Need.<element:br></element:br><element:span>Nothing You Don't.</element:span>"
+        },
+        "3/declaration/body/0/argument/1/1/3": {
+          "type": "element",
+          "hash": "b73dddf54bec50991b41453081f2b655",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Powerful features designed to make global deployment effortless"
+        }
+      }
+    },
+    "../components/sections/hero-section.tsx": {
+      "scopes": {
+        "7/declaration/body/6/argument/1/11/1-placeholder": {
+          "type": "attribute",
+          "hash": "97a303494cbbe8be2f06507cdb7d94df",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Describe your website idea..."
+        },
+        "7/declaration/body/6/argument/1/15/1": {
+          "type": "element",
+          "hash": "5704c713ec300532e275a9f274041ad7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Start Building Free"
+        },
+        "7/declaration/body/6/argument/1/19/1/1": {
+          "type": "element",
+          "hash": "95db5d0ffb4ca86daa9437400343589c",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "50+"
+        },
+        "7/declaration/body/6/argument/1/19/1/3": {
+          "type": "element",
+          "hash": "298eaeedec8aed6a5badfe4f027ac383",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "LANGUAGES"
+        },
+        "7/declaration/body/6/argument/1/19/3/1": {
+          "type": "element",
+          "hash": "98ab607ccffd6fac65061171ccc90a43",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "10K+"
+        },
+        "7/declaration/body/6/argument/1/19/3/3": {
+          "type": "element",
+          "hash": "1f8d2e440633a345bb2435715610b2cf",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "SITES BUILT"
+        },
+        "7/declaration/body/6/argument/1/19/5/1": {
+          "type": "element",
+          "hash": "ebf8401702bd148b6b1b8a3cbcbe256f",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "99.9%"
+        },
+        "7/declaration/body/6/argument/1/19/5/3": {
+          "type": "element",
+          "hash": "454ef0404c04fc8e6378d7288034567d",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "UPTIME"
+        },
+        "7/declaration/body/6/argument/1/3/3": {
+          "type": "element",
+          "hash": "ee632f113513e6056417057d69277aed",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "MULTILINGUAL DEPLOYMENT IN SECONDS"
+        },
+        "7/declaration/body/6/argument/1/7/1": {
+          "type": "element",
+          "hash": "7c7c79c85af16089f56ea3a4d08cc3b1",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Build Websites.<element:br></element:br><element:span>Any <element:AnimatedHeroWord></element:AnimatedHeroWord>.<element:div></element:div></element:span>"
+        },
+        "7/declaration/body/6/argument/1/7/3": {
+          "type": "element",
+          "hash": "9634966bf4ace811c680ee6eaa3fbdcc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "LingoSite transforms your content into stunning multilingual websites instantly. No coding. No complexity. Just pure global reach."
+        }
+      }
+    },
+    "../components/ui/ai-prompt-box.tsx": {
+      "scopes": {
+        "20/0/init/0/body/3/3/3": {
+          "type": "element",
+          "hash": "2c2e22f8424a1031de89063bd0022e16",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Close"
+        },
+        "30/0/init/body/1/argument/1/1": {
+          "type": "element",
+          "hash": "0b42878c56138ea7d1109af8d7f9e3f4",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Image Preview"
+        },
+        "30/0/init/body/1/argument/1/3/1-alt": {
+          "type": "attribute",
+          "hash": "19c9e0b0b826dbd40c2e47896ae52a26",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Full preview"
+        },
+        "45/declaration/0/init/0/body/26/argument/1/7/1/3/1/3/1/expression/right": {
+          "type": "element",
+          "hash": "e4c97823a63828ab07113ceb1a3f1bea",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Search"
+        },
+        "45/declaration/0/init/0/body/26/argument/1/7/1/3/5/3/1/expression/right": {
+          "type": "element",
+          "hash": "3c9e352acff1346d3de847bd0b75fb89",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Think"
+        },
+        "45/declaration/0/init/0/body/26/argument/1/7/1/3/9/3/1/expression/right": {
+          "type": "element",
+          "hash": "0cf13c1156b1245e5ffc58cae839cb8a",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Canvas"
+        }
+      }
+    },
+    "../components/ui/language-switcher.tsx": {
+      "scopes": {
+        "3/declaration/body/2/argument-aria-label": {
+          "type": "attribute",
+          "hash": "198ae390ea212eaf864402aadfc6ef26",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Select interface language"
+        }
+      }
+    },
+    "auth/page.tsx": {
+      "scopes": {
+        "6/declaration/body/2/argument/1/3/1/1": {
+          "type": "element",
+          "hash": "3665a8a3798690d838cdedaf34d0af11",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "L"
+        },
+        "6/declaration/body/2/argument/1/3/3": {
+          "type": "element",
+          "hash": "fcc74af4fdc8d510a7eeeaeb1c8482e3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "LingoSite"
+        },
+        "6/declaration/body/2/argument/1/5/1/1": {
+          "type": "element",
+          "hash": "3180ad6b8de344b781637750259e0f53",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Welcome"
+        },
+        "6/declaration/body/2/argument/1/5/1/3": {
+          "type": "element",
+          "hash": "be7a792ddf416e979858ca6a6b6f1784",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign in to your account or create a new one"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/1/1": {
+          "type": "element",
+          "hash": "ec7b8f314fe9bc6591006707484ede61",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign In"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/1/3": {
+          "type": "element",
+          "hash": "0dd2ae69be4618c1f9e615774a4509ca",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign Up"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/5/1/1/1": {
+          "type": "element",
+          "hash": "0f2270232cc1a15781427530ba3c0326",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Email"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/5/1/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "3cbb854500cac63513492e7abbc5cff3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "you@example.com"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/5/1/3/1": {
+          "type": "element",
+          "hash": "69e956ec4edad22d0ec3bd55e3949933",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Password"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/5/1/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/5/1/5/1/3": {
+          "type": "element",
+          "hash": "afc02ff1df56ecf8493e9e201592d764",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Remember me"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/5/1/5/3": {
+          "type": "element",
+          "hash": "4ea5df8b46ac615f35b01c71585a9c84",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Forgot password?"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/9/1/1/1": {
+          "type": "element",
+          "hash": "3f9e63964fb955bcb49dcc87d1f80ec4",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Full Name"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/9/1/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "febee8e9ab40b2fe5106d72675228d00",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "John Doe"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/9/1/3/1": {
+          "type": "element",
+          "hash": "0f2270232cc1a15781427530ba3c0326",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Email"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/9/1/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "3cbb854500cac63513492e7abbc5cff3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "you@example.com"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/9/1/5/1": {
+          "type": "element",
+          "hash": "69e956ec4edad22d0ec3bd55e3949933",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Password"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/9/1/5/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/9/1/7/1": {
+          "type": "element",
+          "hash": "0634691db1d241422b9225439a50fdc7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Confirm Password"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/9/1/7/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "6/declaration/body/2/argument/1/5/3/1/9/1/9": {
+          "type": "element",
+          "hash": "71a00b693a25126e3bc01c43aee884dc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "By signing up, you agree to our <element:a>Terms</element:a> and <element:a>Privacy Policy</element:a>"
+        },
+        "6/declaration/body/2/argument/1/5/3/5/3/1": {
+          "type": "element",
+          "hash": "11a7be95ef4cd680f510166b4d348c7f",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Or continue with"
+        },
+        "6/declaration/body/2/argument/1/5/3/9/1": {
+          "type": "element",
+          "hash": "81153ffaa3c2a12cec7b7f7164297c52",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:svg><element:path></element:path><element:path></element:path><element:path></element:path><element:path></element:path></element:svg> Google"
+        },
+        "6/declaration/body/2/argument/1/5/3/9/3": {
+          "type": "element",
+          "hash": "1340adec82bd1159ea2ed0912f8bbc34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:svg><element:path></element:path></element:svg> GitHub"
+        },
+        "6/declaration/body/2/argument/1/7/1": {
+          "type": "element",
+          "hash": "ac63a265ae5f272257aaedc602453cfc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "← Back to home"
+        }
+      }
+    },
+    "dashboard/page.tsx": {
+      "scopes": {
+        "9/declaration/body/1/argument/3/1/1/1/1/1/1": {
+          "type": "element",
+          "hash": "3665a8a3798690d838cdedaf34d0af11",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "L"
+        },
+        "9/declaration/body/1/argument/3/1/1/1/1/3": {
+          "type": "element",
+          "hash": "fcc74af4fdc8d510a7eeeaeb1c8482e3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "LingoSite"
+        },
+        "9/declaration/body/1/argument/3/1/1/3/1": {
+          "type": "element",
+          "hash": "3cf12b88c96fe4bb29fe2c97d443bddb",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Settings></element:Settings> Settings"
+        },
+        "9/declaration/body/1/argument/3/1/1/3/3": {
+          "type": "element",
+          "hash": "705a167e004e930f2102ea7de652b466",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:LogOut></element:LogOut> Sign Out"
+        },
+        "9/declaration/body/1/argument/5/15/1/expression/0/body/3/1/1/3": {
+          "type": "element",
+          "hash": "68df7e24a077ab2a1514a47109bb261e",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "{site.languages} Languages"
+        },
+        "9/declaration/body/1/argument/5/15/1/expression/0/body/3/1/3/3": {
+          "type": "element",
+          "hash": "6eb63c906c728b8f2534ed27627767c7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "{site.views} views"
+        },
+        "9/declaration/body/1/argument/5/15/1/expression/0/body/3/3": {
+          "type": "element",
+          "hash": "a6f24e3e655aacc5111d3089e52eaba0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Updated {site.updated}"
+        },
+        "9/declaration/body/1/argument/5/15/1/expression/0/body/3/5/1/1": {
+          "type": "element",
+          "hash": "a3a669e1d974d447d6015f8252f6f3ff",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Settings></element:Settings> Edit"
+        },
+        "9/declaration/body/1/argument/5/15/1/expression/0/body/3/5/3": {
+          "type": "element",
+          "hash": "e54db96796de64a1831806e1303294ce",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:ExternalLink></element:ExternalLink> View"
+        },
+        "9/declaration/body/1/argument/5/19/expression/right/3": {
+          "type": "element",
+          "hash": "63f5df6469bacd0420609d9abf8ad267",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "No sites yet"
+        },
+        "9/declaration/body/1/argument/5/19/expression/right/5": {
+          "type": "element",
+          "hash": "5de5a7048e5e0a654240740382026895",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Create your first multilingual website to get started"
+        },
+        "9/declaration/body/1/argument/5/19/expression/right/7/1": {
+          "type": "element",
+          "hash": "5b26ed87ae7cc477829a0664b51434da",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Plus></element:Plus> Create Your First Site"
+        },
+        "9/declaration/body/1/argument/5/3/1/1": {
+          "type": "element",
+          "hash": "70e605ea71690dc8edf5b871750071b1",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "My Sites"
+        },
+        "9/declaration/body/1/argument/5/3/1/3": {
+          "type": "element",
+          "hash": "cbca8653218eea6a4ddd0cfdd672195c",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "{sites.length} sites • <function:sites.reduce/> total languages"
+        },
+        "9/declaration/body/1/argument/5/3/3/1": {
+          "type": "element",
+          "hash": "3173ff808ae27f2de6292408ad9b10d2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Plus></element:Plus> New Site"
+        },
+        "9/declaration/body/1/argument/5/7/1/1/1/1/1": {
+          "type": "element",
+          "hash": "8e615a3b7e3d78937772da941f26dee1",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Total Sites"
+        },
+        "9/declaration/body/1/argument/5/7/3/1/1/1/1": {
+          "type": "element",
+          "hash": "e955fd9c4feda1d93e2868035f12a27d",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Total Views"
+        },
+        "9/declaration/body/1/argument/5/7/3/1/1/1/3": {
+          "type": "element",
+          "hash": "183dc84a0963db490ae29153ea8d139b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "58K"
+        },
+        "9/declaration/body/1/argument/5/7/5/1/1/1/1": {
+          "type": "element",
+          "hash": "2d2a54a7cbbf640ba2aff643a8a3c7c1",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Languages"
+        },
+        "9/declaration/body/1/argument/5/7/5/1/1/3/1": {
+          "type": "element",
+          "hash": "1298388dded612d1849f66223141db43",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "🌍"
+        }
+      }
+    },
+    "live/[id]/page.tsx": {
+      "scopes": {
+        "8/declaration/body/12/consequent/0/argument/1/3": {
+          "type": "element",
+          "hash": "64191698f8207dfb5b7564bea965b4e1",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Loading your component..."
+        },
+        "8/declaration/body/13/consequent/0/argument/1/1": {
+          "type": "element",
+          "hash": "d6304f3fa01d74002b6a57def151b348",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Component not found"
+        },
+        "8/declaration/body/13/consequent/0/argument/1/3": {
+          "type": "element",
+          "hash": "58aef00f74528091e582512498bef4f8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "This component might have expired or the ID is invalid."
+        },
+        "8/declaration/body/13/consequent/0/argument/1/5/1": {
+          "type": "element",
+          "hash": "3307b46d8e54605dd8bc83c17112af28",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back to Dashboard"
+        },
+        "8/declaration/body/15/argument/3/1/1/1/1/1": {
+          "type": "element",
+          "hash": "50aeb06137ab55a288b9c12c1b8bf466",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:ArrowLeft></element:ArrowLeft> Back"
+        },
+        "8/declaration/body/15/argument/3/1/1/1/3/3": {
+          "type": "element",
+          "hash": "88c7c9175b3b2ea9a30eb2bb957d8f71",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Live Preview • <element:span><function:previewLanguage.toUpperCase/></element:span>"
+        },
+        "8/declaration/body/15/argument/3/1/1/3/1": {
+          "type": "element",
+          "hash": "0ebf3cc2e85a7a7407c89cf09d80c391",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Eye></element:Eye> Preview"
+        },
+        "8/declaration/body/15/argument/3/1/1/3/3": {
+          "type": "element",
+          "hash": "a0fe47eac6d7f6571b89b2872091ae63",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Code></element:Code> Code"
+        },
+        "8/declaration/body/15/argument/3/1/1/3/5": {
+          "type": "element",
+          "hash": "c477cac6ab55e5e35bebd8f15b723bf3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Globe></element:Globe> Translate"
+        },
+        "8/declaration/body/15/argument/3/3/expression/right": {
+          "type": "element",
+          "hash": "36df4d46d344a7dcbb3867e2ac8e4188",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Published successfully! View at <element:a>{publishedUrl}</element:a>"
+        },
+        "8/declaration/body/15/argument/5/3/1/1": {
+          "type": "element",
+          "hash": "662152eb326fba1600845ac04c778fcf",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Generated from prompt"
+        },
+        "8/declaration/body/15/argument/5/3/3/1": {
+          "type": "element",
+          "hash": "06b3d740b6741ad15077ae0dc849005f",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "\"{componentData.prompt}\""
+        },
+        "8/declaration/body/15/argument/5/3/3/3": {
+          "type": "element",
+          "hash": "f52e78664f804fdb82b04a0d6c33e419",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Created on <function:Date.toLocaleDateString/>"
+        },
+        "8/declaration/body/15/argument/5/7/expression/alternate/1/1/1": {
+          "type": "element",
+          "hash": "d6e6286d246c5e2838ceb352512e4fba",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Component Code"
+        },
+        "8/declaration/body/15/argument/5/7/expression/alternate/1/1/3": {
+          "type": "element",
+          "hash": "08b6ab60f9dfcfa1710fa11caaf75ca8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Download></element:Download> Download"
+        },
+        "8/declaration/body/15/argument/9/expression/right/1/1/1": {
+          "type": "element",
+          "hash": "8831fc367f0f2ec5056ae961e013f745",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Publish Your Site"
+        },
+        "8/declaration/body/15/argument/9/expression/right/1/3/1": {
+          "type": "element",
+          "hash": "0d3893901391aaa2e7413edab67c27cd",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Publishing will make your site live and accessible at the generated preview URL."
+        },
+        "8/declaration/body/15/argument/9/expression/right/1/3/3/1": {
+          "type": "element",
+          "hash": "6abd15e78d2f293608f319af9a9c90a9",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<function:componentData.projectName.toLowerCase/>.linguallyric.app"
+        },
+        "8/declaration/body/15/argument/9/expression/right/1/3/5": {
+          "type": "element",
+          "hash": "efd8deb33ade8a85c54cba7ce542a986",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "You can add a custom domain and enable more translations after publishing."
+        },
+        "8/declaration/body/15/argument/9/expression/right/1/3/7/1": {
+          "type": "element",
+          "hash": "25b06367926e28e1cf86d51b92ed9802",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Cancel"
+        }
+      }
+    },
+    "projects/[id]/page.tsx": {
+      "scopes": {
+        "11/declaration/body/5/consequent/0/argument/1/1": {
+          "type": "element",
+          "hash": "be3b516c02b05553acb4ae338511f645",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project not found"
+        },
+        "11/declaration/body/5/consequent/0/argument/1/3/1": {
+          "type": "element",
+          "hash": "3307b46d8e54605dd8bc83c17112af28",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back to Dashboard"
+        },
+        "11/declaration/body/6/argument/3/1/1/1/1/1": {
+          "type": "element",
+          "hash": "50aeb06137ab55a288b9c12c1b8bf466",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:ArrowLeft></element:ArrowLeft> Back"
+        },
+        "11/declaration/body/6/argument/3/1/1/1/3/1/1": {
+          "type": "element",
+          "hash": "3665a8a3798690d838cdedaf34d0af11",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "L"
+        },
+        "11/declaration/body/6/argument/3/1/1/3/1": {
+          "type": "element",
+          "hash": "0ebf3cc2e85a7a7407c89cf09d80c391",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Eye></element:Eye> Preview"
+        },
+        "11/declaration/body/6/argument/3/1/1/3/3": {
+          "type": "element",
+          "hash": "05a8cea329693ba166382c56470693e0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Save></element:Save> Save Changes"
+        },
+        "11/declaration/body/6/argument/5/1/1/1": {
+          "type": "element",
+          "hash": "97d979a3267bfe1889f3fda8331cff39",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:BarChart3></element:BarChart3> Overview"
+        },
+        "11/declaration/body/6/argument/5/1/1/3": {
+          "type": "element",
+          "hash": "6737468ee34a8e1ad4d0079e85c864b9",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Code></element:Code> Content"
+        },
+        "11/declaration/body/6/argument/5/1/1/5": {
+          "type": "element",
+          "hash": "536a32e29e52fab2fecf963323fefdcc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:LanguagesIcon></element:LanguagesIcon> Languages"
+        },
+        "11/declaration/body/6/argument/5/1/1/7": {
+          "type": "element",
+          "hash": "5220b31630696c98696d97408518f17b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Settings></element:Settings> Settings"
+        },
+        "11/declaration/body/6/argument/5/1/13/1/1/1": {
+          "type": "element",
+          "hash": "9c56d5afee8a73dfc283a452470f3a10",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Manage Languages"
+        },
+        "11/declaration/body/6/argument/5/1/13/1/3/1/1": {
+          "type": "element",
+          "hash": "5b315aae411de6f5579251fb8c46dc73",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Globe></element:Globe> Add New Language"
+        },
+        "11/declaration/body/6/argument/5/1/13/1/3/1/3/1/expression/0/body/3/1": {
+          "type": "element",
+          "hash": "970fe3cb6b45efda2b5ede6a83ddc1ef",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Edit"
+        },
+        "11/declaration/body/6/argument/5/1/17/1/1/1": {
+          "type": "element",
+          "hash": "81665d4ffa725ae60c7b38a8c8ffaf16",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Settings"
+        },
+        "11/declaration/body/6/argument/5/1/17/1/3/1/1": {
+          "type": "element",
+          "hash": "dd546200ce6ed6eab0675a2324498b34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Name"
+        },
+        "11/declaration/body/6/argument/5/1/17/1/3/3/1": {
+          "type": "element",
+          "hash": "402d46965eacc3af4c5df92e53e95712",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Domain"
+        },
+        "11/declaration/body/6/argument/5/1/17/1/3/5/1": {
+          "type": "element",
+          "hash": "4e1fcce15854d824919b4a582c697c90",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Status"
+        },
+        "11/declaration/body/6/argument/5/1/17/1/3/5/3/1": {
+          "type": "element",
+          "hash": "e8a92958ad300aacfe46c2bf6644927e",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Draft"
+        },
+        "11/declaration/body/6/argument/5/1/17/1/3/5/3/3": {
+          "type": "element",
+          "hash": "77a9c14fc9762e0e058e9b5ae04c8d15",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Live"
+        },
+        "11/declaration/body/6/argument/5/1/17/1/3/7/1": {
+          "type": "element",
+          "hash": "eaaf5ace8f3b74bb62bdbc90baf0615e",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Trash2></element:Trash2> Delete Project"
+        },
+        "11/declaration/body/6/argument/5/1/5/1/1/1/1/1/1": {
+          "type": "element",
+          "hash": "e955fd9c4feda1d93e2868035f12a27d",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Total Views"
+        },
+        "11/declaration/body/6/argument/5/1/5/1/3/1/1/1/1": {
+          "type": "element",
+          "hash": "2d2a54a7cbbf640ba2aff643a8a3c7c1",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Languages"
+        },
+        "11/declaration/body/6/argument/5/1/5/1/5/1/1/1/1": {
+          "type": "element",
+          "hash": "956353f0af47fe60f0f45ec25d129a01",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Last Updated"
+        },
+        "11/declaration/body/6/argument/5/1/5/3/1/1": {
+          "type": "element",
+          "hash": "02468738cd8efeb1cdfb2c2c2d9568d7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Active Languages"
+        },
+        "11/declaration/body/6/argument/5/1/9/1/1": {
+          "type": "element",
+          "hash": "1493507a2345f3bcbc53eac660f24687",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Select a language to edit content"
+        },
+        "11/declaration/body/6/argument/5/1/9/3/1/1": {
+          "type": "element",
+          "hash": "554719f84dbc4f100338a970c58a4a46",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Content Editor - {languageNames[selectedLanguage]}"
+        },
+        "11/declaration/body/6/argument/5/1/9/3/3/1/1": {
+          "type": "element",
+          "hash": "fb9d47d10d953363f333014b1c54db7e",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Page Title"
+        },
+        "11/declaration/body/6/argument/5/1/9/3/3/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "4eaaecec71fb5a2e98be29a31e1cf684",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Enter page title"
+        },
+        "11/declaration/body/6/argument/5/1/9/3/3/3/1": {
+          "type": "element",
+          "hash": "ff232c54a66452f0ed000bbe8232e91f",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Meta Description"
+        },
+        "11/declaration/body/6/argument/5/1/9/3/3/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "c280e544b24a695f18770485f3e66a5b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Enter meta description"
+        },
+        "11/declaration/body/6/argument/5/1/9/3/3/5/1": {
+          "type": "element",
+          "hash": "c117267a01bb5406a47a80408de12258",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Main Content"
+        },
+        "11/declaration/body/6/argument/5/1/9/3/3/5/3-placeholder": {
+          "type": "attribute",
+          "hash": "debd8e53e66454faf2ab25869dc2dd7d",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Enter main content"
+        }
+      }
+    },
+    "projects/new/page.tsx": {
+      "scopes": {
+        "11/body/13/argument/3/1/1/1/1/1": {
+          "type": "element",
+          "hash": "50aeb06137ab55a288b9c12c1b8bf466",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:ArrowLeft></element:ArrowLeft> Back"
+        },
+        "11/body/13/argument/3/1/1/1/3": {
+          "type": "element",
+          "hash": "cffdf5c0ad015bea0b0e5124b29b14b7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Create New Site"
+        },
+        "11/body/13/argument/3/1/1/3/1": {
+          "type": "element",
+          "hash": "e5862569dfd352ac68a7c0accd6cede2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Step {step} of 3"
+        },
+        "11/body/13/argument/5/11/expression/right/1/1": {
+          "type": "element",
+          "hash": "628557cf8e15187f5b16ab9219aad860",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Review your site"
+        },
+        "11/body/13/argument/5/11/expression/right/1/3": {
+          "type": "element",
+          "hash": "68a274f796f75339783bbecf2198e663",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Everything looks good? Let's create it!"
+        },
+        "11/body/13/argument/5/11/expression/right/3/1/1": {
+          "type": "element",
+          "hash": "aa0ca4f48bf0dc73a7dbd759e334d5ac",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Site Details"
+        },
+        "11/body/13/argument/5/11/expression/right/3/3/1/1": {
+          "type": "element",
+          "hash": "dd546200ce6ed6eab0675a2324498b34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Name"
+        },
+        "11/body/13/argument/5/11/expression/right/3/3/3/expression/right/1": {
+          "type": "element",
+          "hash": "402d46965eacc3af4c5df92e53e95712",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Domain"
+        },
+        "11/body/13/argument/5/11/expression/right/3/3/5/1": {
+          "type": "element",
+          "hash": "b064f2912c2985a0d8be3e5d8b1946b2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Languages ({selectedLanguages.length})"
+        },
+        "11/body/13/argument/5/11/expression/right/3/3/7/expression/right/1": {
+          "type": "element",
+          "hash": "af55e714fc3967e2fbb56e56325bae72",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "AI Prompt"
+        },
+        "11/body/13/argument/5/11/expression/right/5/1": {
+          "type": "element",
+          "hash": "94a7abecb2a3b70a4420a9e9a13df1cb",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back"
+        },
+        "11/body/13/argument/5/11/expression/right/5/3": {
+          "type": "element",
+          "hash": "fb845c4f1958440b0f46cca5f11b7c71",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Sparkles></element:Sparkles> Create Site"
+        },
+        "11/body/13/argument/5/3/expression/right/1/1": {
+          "type": "element",
+          "hash": "645e344c0f52319fa50bb3a91542c3dd",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Let's create your site"
+        },
+        "11/body/13/argument/5/3/expression/right/1/3": {
+          "type": "element",
+          "hash": "ac9e9a0ca5608274fb2b491ba35f162b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Describe your website idea and we'll generate it for you"
+        },
+        "11/body/13/argument/5/3/expression/right/3/1/1": {
+          "type": "element",
+          "hash": "57bc379c782e47e6895dd3c230bd9c68",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Sparkles></element:Sparkles> AI-Powered Generation"
+        },
+        "11/body/13/argument/5/3/expression/right/3/3/1/1": {
+          "type": "element",
+          "hash": "277fd1a41cc237a437cd1d5e4a80463b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Language"
+        },
+        "11/body/13/argument/5/3/expression/right/3/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "daa1e8455d6564558de62cec75d2ca55",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Describe your website... (e.g., 'A modern e-commerce site for selling handmade jewelry')"
+        },
+        "11/body/13/argument/5/3/expression/right/3/3/5/expression/right/1": {
+          "type": "element",
+          "hash": "b44eef0bb6fd0b92a3f4852badb13430",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Generating your multilingual site..."
+        },
+        "11/body/13/argument/5/3/expression/right/5/3/1": {
+          "type": "element",
+          "hash": "698aebc8c207afd6c7e55f726fb5e012",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Or create manually"
+        },
+        "11/body/13/argument/5/3/expression/right/7/1/1": {
+          "type": "element",
+          "hash": "3211256571b4ab2ae21b6c6e08608ee8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Manual Setup"
+        },
+        "11/body/13/argument/5/3/expression/right/7/3/1/1": {
+          "type": "element",
+          "hash": "dd546200ce6ed6eab0675a2324498b34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Name"
+        },
+        "11/body/13/argument/5/3/expression/right/7/3/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "c37352d389be060b48a77dc266f32a50",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "My Awesome Website"
+        },
+        "11/body/13/argument/5/3/expression/right/7/3/3/1": {
+          "type": "element",
+          "hash": "769fd2bb957e126159f8bdc0e5b2d764",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Domain (optional)"
+        },
+        "11/body/13/argument/5/3/expression/right/7/3/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "2b7b8bf1478064f391e4059418cadefc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "mywebsite.com"
+        },
+        "11/body/13/argument/5/3/expression/right/7/3/5": {
+          "type": "element",
+          "hash": "1254cf3bddad9ecaa3aa84079d5bffe2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Continue"
+        },
+        "11/body/13/argument/5/7/expression/right/1/1": {
+          "type": "element",
+          "hash": "481b182b084480dc27f1512a46da7a68",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Choose languages"
+        },
+        "11/body/13/argument/5/7/expression/right/1/3": {
+          "type": "element",
+          "hash": "86789b761076d6ee0ec4de8c27777ea0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Select the languages you want your site to support"
+        },
+        "11/body/13/argument/5/7/expression/right/3/1/1/1": {
+          "type": "element",
+          "hash": "f6a7c369125309829ea028842a83fd76",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Popular Languages"
+        },
+        "11/body/13/argument/5/7/expression/right/3/1/1/3": {
+          "type": "element",
+          "hash": "b2a412ccb077521cbfdd9f409c5097d4",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "{selectedLanguages.length} selected"
+        },
+        "11/body/13/argument/5/7/expression/right/3/3/3": {
+          "type": "element",
+          "hash": "3754158a94db19da9521b85a56f76437",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Globe></element:Globe> Add More Languages"
+        },
+        "11/body/13/argument/5/7/expression/right/5/1": {
+          "type": "element",
+          "hash": "94a7abecb2a3b70a4420a9e9a13df1cb",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back"
+        },
+        "11/body/13/argument/5/7/expression/right/5/3": {
+          "type": "element",
+          "hash": "936f50bec7caf704d3e6dc7eef8b8991",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Continue"
+        },
+        "11/body/14/argument/3/1/1/1/1/1": {
+          "type": "element",
+          "hash": "50aeb06137ab55a288b9c12c1b8bf466",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:ArrowLeft></element:ArrowLeft> Back"
+        },
+        "11/body/14/argument/3/1/1/1/3": {
+          "type": "element",
+          "hash": "cffdf5c0ad015bea0b0e5124b29b14b7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Create New Site"
+        },
+        "11/body/14/argument/3/1/1/3/1": {
+          "type": "element",
+          "hash": "e5862569dfd352ac68a7c0accd6cede2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Step {step} of 3"
+        },
+        "11/body/14/argument/5/11/expression/right/1/1": {
+          "type": "element",
+          "hash": "628557cf8e15187f5b16ab9219aad860",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Review your site"
+        },
+        "11/body/14/argument/5/11/expression/right/1/3": {
+          "type": "element",
+          "hash": "68a274f796f75339783bbecf2198e663",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Everything looks good? Let's create it!"
+        },
+        "11/body/14/argument/5/11/expression/right/3/1/1": {
+          "type": "element",
+          "hash": "aa0ca4f48bf0dc73a7dbd759e334d5ac",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Site Details"
+        },
+        "11/body/14/argument/5/11/expression/right/3/3/1/1": {
+          "type": "element",
+          "hash": "dd546200ce6ed6eab0675a2324498b34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Name"
+        },
+        "11/body/14/argument/5/11/expression/right/3/3/3/expression/right/1": {
+          "type": "element",
+          "hash": "402d46965eacc3af4c5df92e53e95712",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Domain"
+        },
+        "11/body/14/argument/5/11/expression/right/3/3/5/1": {
+          "type": "element",
+          "hash": "b064f2912c2985a0d8be3e5d8b1946b2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Languages ({selectedLanguages.length})"
+        },
+        "11/body/14/argument/5/11/expression/right/3/3/7/expression/right/1": {
+          "type": "element",
+          "hash": "af55e714fc3967e2fbb56e56325bae72",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "AI Prompt"
+        },
+        "11/body/14/argument/5/11/expression/right/5/1": {
+          "type": "element",
+          "hash": "94a7abecb2a3b70a4420a9e9a13df1cb",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back"
+        },
+        "11/body/14/argument/5/11/expression/right/5/3": {
+          "type": "element",
+          "hash": "fb845c4f1958440b0f46cca5f11b7c71",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Sparkles></element:Sparkles> Create Site"
+        },
+        "11/body/14/argument/5/3/expression/right/1/1": {
+          "type": "element",
+          "hash": "645e344c0f52319fa50bb3a91542c3dd",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Let's create your site"
+        },
+        "11/body/14/argument/5/3/expression/right/1/3": {
+          "type": "element",
+          "hash": "ac9e9a0ca5608274fb2b491ba35f162b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Describe your website idea and we'll generate it for you"
+        },
+        "11/body/14/argument/5/3/expression/right/3/1/1": {
+          "type": "element",
+          "hash": "57bc379c782e47e6895dd3c230bd9c68",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Sparkles></element:Sparkles> AI-Powered Generation"
+        },
+        "11/body/14/argument/5/3/expression/right/3/3/1/1": {
+          "type": "element",
+          "hash": "277fd1a41cc237a437cd1d5e4a80463b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Language"
+        },
+        "11/body/14/argument/5/3/expression/right/3/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "daa1e8455d6564558de62cec75d2ca55",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Describe your website... (e.g., 'A modern e-commerce site for selling handmade jewelry')"
+        },
+        "11/body/14/argument/5/3/expression/right/3/3/5/expression/right/1": {
+          "type": "element",
+          "hash": "b44eef0bb6fd0b92a3f4852badb13430",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Generating your multilingual site..."
+        },
+        "11/body/14/argument/5/3/expression/right/5/3/1": {
+          "type": "element",
+          "hash": "698aebc8c207afd6c7e55f726fb5e012",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Or create manually"
+        },
+        "11/body/14/argument/5/3/expression/right/7/1/1": {
+          "type": "element",
+          "hash": "3211256571b4ab2ae21b6c6e08608ee8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Manual Setup"
+        },
+        "11/body/14/argument/5/3/expression/right/7/3/1/1": {
+          "type": "element",
+          "hash": "dd546200ce6ed6eab0675a2324498b34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Name"
+        },
+        "11/body/14/argument/5/3/expression/right/7/3/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "c37352d389be060b48a77dc266f32a50",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "My Awesome Website"
+        },
+        "11/body/14/argument/5/3/expression/right/7/3/3/1": {
+          "type": "element",
+          "hash": "769fd2bb957e126159f8bdc0e5b2d764",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Domain (optional)"
+        },
+        "11/body/14/argument/5/3/expression/right/7/3/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "2b7b8bf1478064f391e4059418cadefc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "mywebsite.com"
+        },
+        "11/body/14/argument/5/3/expression/right/7/3/5": {
+          "type": "element",
+          "hash": "1254cf3bddad9ecaa3aa84079d5bffe2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Continue"
+        },
+        "11/body/14/argument/5/7/expression/right/1/1": {
+          "type": "element",
+          "hash": "481b182b084480dc27f1512a46da7a68",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Choose languages"
+        },
+        "11/body/14/argument/5/7/expression/right/1/3": {
+          "type": "element",
+          "hash": "86789b761076d6ee0ec4de8c27777ea0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Select the languages you want your site to support"
+        },
+        "11/body/14/argument/5/7/expression/right/3/1/1/1": {
+          "type": "element",
+          "hash": "f6a7c369125309829ea028842a83fd76",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Popular Languages"
+        },
+        "11/body/14/argument/5/7/expression/right/3/1/1/3": {
+          "type": "element",
+          "hash": "b2a412ccb077521cbfdd9f409c5097d4",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "{selectedLanguages.length} selected"
+        },
+        "11/body/14/argument/5/7/expression/right/3/3/3": {
+          "type": "element",
+          "hash": "3754158a94db19da9521b85a56f76437",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Globe></element:Globe> Add More Languages"
+        },
+        "11/body/14/argument/5/7/expression/right/5/1": {
+          "type": "element",
+          "hash": "94a7abecb2a3b70a4420a9e9a13df1cb",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back"
+        },
+        "11/body/14/argument/5/7/expression/right/5/3": {
+          "type": "element",
+          "hash": "936f50bec7caf704d3e6dc7eef8b8991",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Continue"
+        }
+      }
+    },
+    "site/[id]/page.tsx": {
+      "scopes": {
+        "6/declaration/body/6/argument/1/1/1/1/1": {
+          "type": "element",
+          "hash": "4f9f43ac6ed9c92b9735f19c3a549b0b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back to Dashboard"
+        },
+        "6/declaration/body/6/argument/1/1/1/3/3": {
+          "type": "element",
+          "hash": "dbc2f474c06739e0cf7807fc52c0e803",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Live site • <function:activeLocale.toUpperCase/>"
+        },
+        "6/declaration/body/6/argument/1/1/3/1": {
+          "type": "element",
+          "hash": "da300b28fcf0224b9c98cb3df4b9a1d8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Available:"
+        }
+      }
+    }
+  }
+}
