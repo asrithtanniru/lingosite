@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button'
 import { LanguageSwitcher } from '@/components/ui/language-switcher'
 import { cn } from '@/lib/utils'
+import { useAuth } from '@/components/providers/auth-provider'
 import Link from 'next/link'
 
 interface NavbarProps {
@@ -10,6 +11,8 @@ interface NavbarProps {
 }
 
 export function Navbar({ scrolled }: NavbarProps) {
+  const { user, isLoading, signOut } = useAuth()
+
   return (
     <nav className={cn(' top-0 left-0 right-0 z-50 transition-all duration-300', scrolled ? 'bg-background/95 backdrop-blur-sm border-b-2 border-border' : 'bg-transparent')}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,12 +41,31 @@ export function Navbar({ scrolled }: NavbarProps) {
 
           <div className="flex items-center gap-4">
             <LanguageSwitcher />
-            <Link href="/auth">
-              <Button className="hidden sm:inline-flex">Sign In</Button>
-            </Link>
-            <Link href="/auth">
-              <Button>Get Started</Button>
-            </Link>
+            {!isLoading && !user && (
+              <>
+                <Link href="/auth">
+                  <Button className="hidden sm:inline-flex">Sign In</Button>
+                </Link>
+                <Link href="/auth">
+                  <Button>Get Started</Button>
+                </Link>
+              </>
+            )}
+            {!isLoading && user && (
+              <>
+                <Link href="/dashboard">
+                  <Button variant="noShadow" className="hidden sm:inline-flex">
+                    Dashboard
+                  </Button>
+                </Link>
+                <span className="hidden md:inline text-sm text-foreground/70">
+                  {user.email}
+                </span>
+                <Button variant="outline" size="sm" onClick={() => signOut()}>
+                  Sign Out
+                </Button>
+              </>
+            )}
           </div>
         </div>
       </div>

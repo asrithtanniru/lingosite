@@ -146,6 +146,86 @@
           "skip": false,
           "overrides": {},
           "content": "Get Started"
+        },
+        "7/declaration/body/1/argument/1/1/1/1/1": {
+          "type": "element",
+          "hash": "3665a8a3798690d838cdedaf34d0af11",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "L"
+        },
+        "7/declaration/body/1/argument/1/1/1/3": {
+          "type": "element",
+          "hash": "fcc74af4fdc8d510a7eeeaeb1c8482e3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "LingoSite"
+        },
+        "7/declaration/body/1/argument/1/1/3/1": {
+          "type": "element",
+          "hash": "2e0b8174a0461da84f5a7f647033db84",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Features"
+        },
+        "7/declaration/body/1/argument/1/1/3/3": {
+          "type": "element",
+          "hash": "08c6282114101e58c493045cdf251669",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Demo"
+        },
+        "7/declaration/body/1/argument/1/1/3/5": {
+          "type": "element",
+          "hash": "76e4c837b3edfdf329436e5b3f4e1867",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Dashboard"
+        },
+        "7/declaration/body/1/argument/1/1/3/7": {
+          "type": "element",
+          "hash": "738fac8c72f8df237b99d33e9108b00a",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "FAQ"
+        },
+        "7/declaration/body/1/argument/1/1/5/3/expression/right/1/1": {
+          "type": "element",
+          "hash": "ec7b8f314fe9bc6591006707484ede61",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign In"
+        },
+        "7/declaration/body/1/argument/1/1/5/3/expression/right/3/1": {
+          "type": "element",
+          "hash": "1d5f030c4ec9c869e647ae060518b948",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Get Started"
+        },
+        "7/declaration/body/1/argument/1/1/5/5/expression/right/1/1": {
+          "type": "element",
+          "hash": "1d2f196cf5722f6a5a89793cd92fb500",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Dashboard"
+        },
+        "7/declaration/body/1/argument/1/1/5/5/expression/right/5": {
+          "type": "element",
+          "hash": "60fcbab3fec0dd2fa9113afd8ff587c8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign Out"
         }
       }
     },
@@ -714,11 +794,723 @@
           "skip": false,
           "overrides": {},
           "content": "← Back to home"
+        },
+        "8/declaration/body/4/argument/1/3/1/1": {
+          "type": "element",
+          "hash": "3665a8a3798690d838cdedaf34d0af11",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "L"
+        },
+        "8/declaration/body/4/argument/1/3/3": {
+          "type": "element",
+          "hash": "fcc74af4fdc8d510a7eeeaeb1c8482e3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "LingoSite"
+        },
+        "8/declaration/body/4/argument/1/5/1/1": {
+          "type": "element",
+          "hash": "3180ad6b8de344b781637750259e0f53",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Welcome"
+        },
+        "8/declaration/body/4/argument/1/5/1/3": {
+          "type": "element",
+          "hash": "be7a792ddf416e979858ca6a6b6f1784",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign in to your account or create a new one"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/1/1": {
+          "type": "element",
+          "hash": "ec7b8f314fe9bc6591006707484ede61",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign In"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/1/3": {
+          "type": "element",
+          "hash": "0dd2ae69be4618c1f9e615774a4509ca",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign Up"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/5/1/1/1": {
+          "type": "element",
+          "hash": "0f2270232cc1a15781427530ba3c0326",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Email"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/5/1/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "3cbb854500cac63513492e7abbc5cff3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "you@example.com"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/5/1/3/1": {
+          "type": "element",
+          "hash": "69e956ec4edad22d0ec3bd55e3949933",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Password"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/5/1/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/5/1/5/1/3": {
+          "type": "element",
+          "hash": "afc02ff1df56ecf8493e9e201592d764",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Remember me"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/5/1/5/3": {
+          "type": "element",
+          "hash": "4ea5df8b46ac615f35b01c71585a9c84",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Forgot password?"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/9/1/1/1": {
+          "type": "element",
+          "hash": "3f9e63964fb955bcb49dcc87d1f80ec4",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Full Name"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/9/1/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "febee8e9ab40b2fe5106d72675228d00",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "John Doe"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/9/1/3/1": {
+          "type": "element",
+          "hash": "0f2270232cc1a15781427530ba3c0326",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Email"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/9/1/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "3cbb854500cac63513492e7abbc5cff3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "you@example.com"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/9/1/5/1": {
+          "type": "element",
+          "hash": "69e956ec4edad22d0ec3bd55e3949933",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Password"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/9/1/5/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/9/1/7/1": {
+          "type": "element",
+          "hash": "0634691db1d241422b9225439a50fdc7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Confirm Password"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/9/1/7/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "8/declaration/body/4/argument/1/5/3/1/9/1/9": {
+          "type": "element",
+          "hash": "71a00b693a25126e3bc01c43aee884dc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "By signing up, you agree to our <element:a>Terms</element:a> and <element:a>Privacy Policy</element:a>"
+        },
+        "8/declaration/body/4/argument/1/5/3/5/3/1": {
+          "type": "element",
+          "hash": "11a7be95ef4cd680f510166b4d348c7f",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Or continue with"
+        },
+        "8/declaration/body/4/argument/1/5/3/9/1": {
+          "type": "element",
+          "hash": "81153ffaa3c2a12cec7b7f7164297c52",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:svg><element:path></element:path><element:path></element:path><element:path></element:path><element:path></element:path></element:svg> Google"
+        },
+        "8/declaration/body/4/argument/1/5/3/9/3": {
+          "type": "element",
+          "hash": "1340adec82bd1159ea2ed0912f8bbc34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:svg><element:path></element:path></element:svg> GitHub"
+        },
+        "8/declaration/body/4/argument/1/7/1": {
+          "type": "element",
+          "hash": "ac63a265ae5f272257aaedc602453cfc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "← Back to home"
+        },
+        "8/declaration/body/5/argument/1/3/1/1": {
+          "type": "element",
+          "hash": "3665a8a3798690d838cdedaf34d0af11",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "L"
+        },
+        "8/declaration/body/5/argument/1/3/3": {
+          "type": "element",
+          "hash": "fcc74af4fdc8d510a7eeeaeb1c8482e3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "LingoSite"
+        },
+        "8/declaration/body/5/argument/1/5/1/1": {
+          "type": "element",
+          "hash": "3180ad6b8de344b781637750259e0f53",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Welcome"
+        },
+        "8/declaration/body/5/argument/1/5/1/3": {
+          "type": "element",
+          "hash": "be7a792ddf416e979858ca6a6b6f1784",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign in to your account or create a new one"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/1/1": {
+          "type": "element",
+          "hash": "ec7b8f314fe9bc6591006707484ede61",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign In"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/1/3": {
+          "type": "element",
+          "hash": "0dd2ae69be4618c1f9e615774a4509ca",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign Up"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/5/1/1/1": {
+          "type": "element",
+          "hash": "0f2270232cc1a15781427530ba3c0326",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Email"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/5/1/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "3cbb854500cac63513492e7abbc5cff3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "you@example.com"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/5/1/3/1": {
+          "type": "element",
+          "hash": "69e956ec4edad22d0ec3bd55e3949933",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Password"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/5/1/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/5/1/5/1/3": {
+          "type": "element",
+          "hash": "afc02ff1df56ecf8493e9e201592d764",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Remember me"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/5/1/5/3": {
+          "type": "element",
+          "hash": "4ea5df8b46ac615f35b01c71585a9c84",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Forgot password?"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/9/1/1/1": {
+          "type": "element",
+          "hash": "3f9e63964fb955bcb49dcc87d1f80ec4",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Full Name"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/9/1/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "febee8e9ab40b2fe5106d72675228d00",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "John Doe"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/9/1/3/1": {
+          "type": "element",
+          "hash": "0f2270232cc1a15781427530ba3c0326",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Email"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/9/1/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "3cbb854500cac63513492e7abbc5cff3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "you@example.com"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/9/1/5/1": {
+          "type": "element",
+          "hash": "69e956ec4edad22d0ec3bd55e3949933",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Password"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/9/1/5/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/9/1/7/1": {
+          "type": "element",
+          "hash": "0634691db1d241422b9225439a50fdc7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Confirm Password"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/9/1/7/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "8/declaration/body/5/argument/1/5/3/1/9/1/9": {
+          "type": "element",
+          "hash": "71a00b693a25126e3bc01c43aee884dc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "By signing up, you agree to our <element:a>Terms</element:a> and <element:a>Privacy Policy</element:a>"
+        },
+        "8/declaration/body/5/argument/1/5/3/5/3/1": {
+          "type": "element",
+          "hash": "11a7be95ef4cd680f510166b4d348c7f",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Or continue with"
+        },
+        "8/declaration/body/5/argument/1/5/3/9/1": {
+          "type": "element",
+          "hash": "81153ffaa3c2a12cec7b7f7164297c52",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:svg><element:path></element:path><element:path></element:path><element:path></element:path><element:path></element:path></element:svg> Google"
+        },
+        "8/declaration/body/5/argument/1/5/3/9/3": {
+          "type": "element",
+          "hash": "1340adec82bd1159ea2ed0912f8bbc34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:svg><element:path></element:path></element:svg> GitHub"
+        },
+        "8/declaration/body/5/argument/1/7/1": {
+          "type": "element",
+          "hash": "ac63a265ae5f272257aaedc602453cfc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "← Back to home"
+        },
+        "8/declaration/body/6/argument/1/3/1/1": {
+          "type": "element",
+          "hash": "3665a8a3798690d838cdedaf34d0af11",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "L"
+        },
+        "8/declaration/body/6/argument/1/3/3": {
+          "type": "element",
+          "hash": "fcc74af4fdc8d510a7eeeaeb1c8482e3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "LingoSite"
+        },
+        "8/declaration/body/6/argument/1/5/1/1": {
+          "type": "element",
+          "hash": "3180ad6b8de344b781637750259e0f53",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Welcome"
+        },
+        "8/declaration/body/6/argument/1/5/1/3": {
+          "type": "element",
+          "hash": "be7a792ddf416e979858ca6a6b6f1784",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign in to your account or create a new one"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/1/1": {
+          "type": "element",
+          "hash": "ec7b8f314fe9bc6591006707484ede61",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign In"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/1/3": {
+          "type": "element",
+          "hash": "0dd2ae69be4618c1f9e615774a4509ca",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign Up"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/5/1/1/1": {
+          "type": "element",
+          "hash": "0f2270232cc1a15781427530ba3c0326",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Email"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/5/1/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "3cbb854500cac63513492e7abbc5cff3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "you@example.com"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/5/1/3/1": {
+          "type": "element",
+          "hash": "69e956ec4edad22d0ec3bd55e3949933",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Password"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/5/1/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/5/1/5/1/3": {
+          "type": "element",
+          "hash": "afc02ff1df56ecf8493e9e201592d764",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Remember me"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/5/1/5/3": {
+          "type": "element",
+          "hash": "4ea5df8b46ac615f35b01c71585a9c84",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Forgot password?"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/9/1/1/1": {
+          "type": "element",
+          "hash": "3f9e63964fb955bcb49dcc87d1f80ec4",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Full Name"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/9/1/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "febee8e9ab40b2fe5106d72675228d00",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "John Doe"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/9/1/3/1": {
+          "type": "element",
+          "hash": "0f2270232cc1a15781427530ba3c0326",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Email"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/9/1/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "3cbb854500cac63513492e7abbc5cff3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "you@example.com"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/9/1/5/1": {
+          "type": "element",
+          "hash": "69e956ec4edad22d0ec3bd55e3949933",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Password"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/9/1/5/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/9/1/7/1": {
+          "type": "element",
+          "hash": "0634691db1d241422b9225439a50fdc7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Confirm Password"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/9/1/7/3-placeholder": {
+          "type": "attribute",
+          "hash": "5ee7cd1a4a7fe6fb896e8a0c4b2d7255",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "••••••••"
+        },
+        "8/declaration/body/6/argument/1/5/3/1/9/1/9": {
+          "type": "element",
+          "hash": "71a00b693a25126e3bc01c43aee884dc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "By signing up, you agree to our <element:a>Terms</element:a> and <element:a>Privacy Policy</element:a>"
+        },
+        "8/declaration/body/6/argument/1/5/3/5/3/1": {
+          "type": "element",
+          "hash": "11a7be95ef4cd680f510166b4d348c7f",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Or continue with"
+        },
+        "8/declaration/body/6/argument/1/5/3/9/1": {
+          "type": "element",
+          "hash": "81153ffaa3c2a12cec7b7f7164297c52",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:svg><element:path></element:path><element:path></element:path><element:path></element:path><element:path></element:path></element:svg> Google"
+        },
+        "8/declaration/body/6/argument/1/5/3/9/3": {
+          "type": "element",
+          "hash": "1340adec82bd1159ea2ed0912f8bbc34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:svg><element:path></element:path></element:svg> GitHub"
+        },
+        "8/declaration/body/6/argument/1/7/1": {
+          "type": "element",
+          "hash": "ac63a265ae5f272257aaedc602453cfc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "← Back to home"
         }
       }
     },
     "dashboard/page.tsx": {
       "scopes": {
+        "10/declaration/body/1/argument/1/1/1/1/1/1": {
+          "type": "element",
+          "hash": "3665a8a3798690d838cdedaf34d0af11",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "L"
+        },
+        "10/declaration/body/1/argument/1/1/1/1/3/1": {
+          "type": "element",
+          "hash": "c9380ea68c8c76ea451bd9613329a07c",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Dashboard"
+        },
+        "10/declaration/body/1/argument/1/1/1/1/3/3": {
+          "type": "element",
+          "hash": "1f009aa50e4ece8d10bb78da668304a8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Your published multilingual sites"
+        },
+        "10/declaration/body/1/argument/1/1/1/3/1": {
+          "type": "element",
+          "hash": "34c9caccfe06dbca9daea02478b891c3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:PlusCircle></element:PlusCircle> New Site"
+        },
+        "10/declaration/body/1/argument/3/1/1/1": {
+          "type": "element",
+          "hash": "8b59e61cda8b09f7be64778e309ed0e0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Your Projects"
+        },
+        "10/declaration/body/1/argument/3/1/3/1/expression/alternate/1/expression/0/body/1/3": {
+          "type": "element",
+          "hash": "33e347b661f73daf6b284a59e029cf40",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Language: <expression/>"
+        },
+        "10/declaration/body/1/argument/3/1/3/1/expression/alternate/1/expression/0/body/1/5": {
+          "type": "element",
+          "hash": "d1dc9b8f1c776531c9ec27acd3478602",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Created at: <expression/>"
+        },
+        "10/declaration/body/1/argument/3/1/3/1/expression/alternate/1/expression/0/body/3/1": {
+          "type": "element",
+          "hash": "0ca3e5a994eb9644f039cb6d9b834947",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Eye></element:Eye> View"
+        },
+        "10/declaration/body/1/argument/3/1/3/1/expression/consequent": {
+          "type": "element",
+          "hash": "6e5e9baa09133222822eaa725c45e36a",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "You don't have any published projects yet. Create a new site to see it here."
+        },
+        "9/declaration/body/1/argument/1/1/1/1/1/1": {
+          "type": "element",
+          "hash": "3665a8a3798690d838cdedaf34d0af11",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "L"
+        },
+        "9/declaration/body/1/argument/1/1/1/1/3/1": {
+          "type": "element",
+          "hash": "c9380ea68c8c76ea451bd9613329a07c",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Dashboard"
+        },
+        "9/declaration/body/1/argument/1/1/1/1/3/3": {
+          "type": "element",
+          "hash": "1f009aa50e4ece8d10bb78da668304a8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Your published multilingual sites"
+        },
+        "9/declaration/body/1/argument/1/1/1/3/1": {
+          "type": "element",
+          "hash": "34c9caccfe06dbca9daea02478b891c3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:PlusCircle></element:PlusCircle> New Site"
+        },
+        "9/declaration/body/1/argument/3/1/1/1": {
+          "type": "element",
+          "hash": "8b59e61cda8b09f7be64778e309ed0e0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Your Projects"
+        },
         "9/declaration/body/1/argument/3/1/1/1/1/1/1": {
           "type": "element",
           "hash": "3665a8a3798690d838cdedaf34d0af11",
@@ -750,6 +1542,38 @@
           "skip": false,
           "overrides": {},
           "content": "<element:LogOut></element:LogOut> Sign Out"
+        },
+        "9/declaration/body/1/argument/3/1/3/1/expression/alternate/1/expression/0/body/1/3": {
+          "type": "element",
+          "hash": "33e347b661f73daf6b284a59e029cf40",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Language: <expression/>"
+        },
+        "9/declaration/body/1/argument/3/1/3/1/expression/alternate/1/expression/0/body/1/5": {
+          "type": "element",
+          "hash": "d1dc9b8f1c776531c9ec27acd3478602",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Created at: <expression/>"
+        },
+        "9/declaration/body/1/argument/3/1/3/1/expression/alternate/1/expression/0/body/3/1": {
+          "type": "element",
+          "hash": "0ca3e5a994eb9644f039cb6d9b834947",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Eye></element:Eye> View"
+        },
+        "9/declaration/body/1/argument/3/1/3/1/expression/consequent": {
+          "type": "element",
+          "hash": "6e5e9baa09133222822eaa725c45e36a",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "You don't have any published projects yet. Create a new site to see it here."
         },
         "9/declaration/body/1/argument/5/15/1/expression/0/body/3/1/1/3": {
           "type": "element",
@@ -1812,6 +2636,774 @@
           "content": "Back"
         },
         "11/body/14/argument/5/7/expression/right/5/3": {
+          "type": "element",
+          "hash": "936f50bec7caf704d3e6dc7eef8b8991",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Continue"
+        },
+        "12/body/14/argument/3/1/1/1/1/1": {
+          "type": "element",
+          "hash": "50aeb06137ab55a288b9c12c1b8bf466",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:ArrowLeft></element:ArrowLeft> Back"
+        },
+        "12/body/14/argument/3/1/1/1/3": {
+          "type": "element",
+          "hash": "cffdf5c0ad015bea0b0e5124b29b14b7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Create New Site"
+        },
+        "12/body/14/argument/3/1/1/3/1": {
+          "type": "element",
+          "hash": "e5862569dfd352ac68a7c0accd6cede2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Step {step} of 3"
+        },
+        "12/body/14/argument/5/1/expression/right/1": {
+          "type": "element",
+          "hash": "fc78ab05aab1734d5844bc8b3b8a75f2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "You're browsing as a guest."
+        },
+        "12/body/14/argument/5/1/expression/right/3": {
+          "type": "element",
+          "hash": "1096887f7faaf182b21f3a43d6a798d3",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign in or create an account to save and publish sites to your dashboard."
+        },
+        "12/body/14/argument/5/1/expression/right/5/1": {
+          "type": "element",
+          "hash": "14693d087c96de55eebd09ab27a5bdd0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Sign In / Sign Up"
+        },
+        "12/body/14/argument/5/11/expression/right/1/1": {
+          "type": "element",
+          "hash": "628557cf8e15187f5b16ab9219aad860",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Review your site"
+        },
+        "12/body/14/argument/5/11/expression/right/1/3": {
+          "type": "element",
+          "hash": "68a274f796f75339783bbecf2198e663",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Everything looks good? Let's create it!"
+        },
+        "12/body/14/argument/5/11/expression/right/3/1/1": {
+          "type": "element",
+          "hash": "aa0ca4f48bf0dc73a7dbd759e334d5ac",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Site Details"
+        },
+        "12/body/14/argument/5/11/expression/right/3/3/1/1": {
+          "type": "element",
+          "hash": "dd546200ce6ed6eab0675a2324498b34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Name"
+        },
+        "12/body/14/argument/5/11/expression/right/3/3/3/expression/right/1": {
+          "type": "element",
+          "hash": "402d46965eacc3af4c5df92e53e95712",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Domain"
+        },
+        "12/body/14/argument/5/11/expression/right/3/3/5/1": {
+          "type": "element",
+          "hash": "b064f2912c2985a0d8be3e5d8b1946b2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Languages ({selectedLanguages.length})"
+        },
+        "12/body/14/argument/5/11/expression/right/3/3/7/expression/right/1": {
+          "type": "element",
+          "hash": "af55e714fc3967e2fbb56e56325bae72",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "AI Prompt"
+        },
+        "12/body/14/argument/5/11/expression/right/5/1": {
+          "type": "element",
+          "hash": "94a7abecb2a3b70a4420a9e9a13df1cb",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back"
+        },
+        "12/body/14/argument/5/11/expression/right/5/3": {
+          "type": "element",
+          "hash": "fb845c4f1958440b0f46cca5f11b7c71",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Sparkles></element:Sparkles> Create Site"
+        },
+        "12/body/14/argument/5/13/expression/right/1/1": {
+          "type": "element",
+          "hash": "628557cf8e15187f5b16ab9219aad860",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Review your site"
+        },
+        "12/body/14/argument/5/13/expression/right/1/3": {
+          "type": "element",
+          "hash": "68a274f796f75339783bbecf2198e663",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Everything looks good? Let's create it!"
+        },
+        "12/body/14/argument/5/13/expression/right/3/1/1": {
+          "type": "element",
+          "hash": "aa0ca4f48bf0dc73a7dbd759e334d5ac",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Site Details"
+        },
+        "12/body/14/argument/5/13/expression/right/3/3/1/1": {
+          "type": "element",
+          "hash": "dd546200ce6ed6eab0675a2324498b34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Name"
+        },
+        "12/body/14/argument/5/13/expression/right/3/3/3/expression/right/1": {
+          "type": "element",
+          "hash": "402d46965eacc3af4c5df92e53e95712",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Domain"
+        },
+        "12/body/14/argument/5/13/expression/right/3/3/5/1": {
+          "type": "element",
+          "hash": "b064f2912c2985a0d8be3e5d8b1946b2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Languages ({selectedLanguages.length})"
+        },
+        "12/body/14/argument/5/13/expression/right/3/3/7/expression/right/1": {
+          "type": "element",
+          "hash": "af55e714fc3967e2fbb56e56325bae72",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "AI Prompt"
+        },
+        "12/body/14/argument/5/13/expression/right/5/1": {
+          "type": "element",
+          "hash": "94a7abecb2a3b70a4420a9e9a13df1cb",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back"
+        },
+        "12/body/14/argument/5/13/expression/right/5/3": {
+          "type": "element",
+          "hash": "fb845c4f1958440b0f46cca5f11b7c71",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Sparkles></element:Sparkles> Create Site"
+        },
+        "12/body/14/argument/5/3/expression/right/1/1": {
+          "type": "element",
+          "hash": "645e344c0f52319fa50bb3a91542c3dd",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Let's create your site"
+        },
+        "12/body/14/argument/5/3/expression/right/1/3": {
+          "type": "element",
+          "hash": "ac9e9a0ca5608274fb2b491ba35f162b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Describe your website idea and we'll generate it for you"
+        },
+        "12/body/14/argument/5/3/expression/right/3/1/1": {
+          "type": "element",
+          "hash": "57bc379c782e47e6895dd3c230bd9c68",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Sparkles></element:Sparkles> AI-Powered Generation"
+        },
+        "12/body/14/argument/5/3/expression/right/3/3/1/1": {
+          "type": "element",
+          "hash": "277fd1a41cc237a437cd1d5e4a80463b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Language"
+        },
+        "12/body/14/argument/5/3/expression/right/3/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "daa1e8455d6564558de62cec75d2ca55",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Describe your website... (e.g., 'A modern e-commerce site for selling handmade jewelry')"
+        },
+        "12/body/14/argument/5/3/expression/right/3/3/5/expression/right/1": {
+          "type": "element",
+          "hash": "b44eef0bb6fd0b92a3f4852badb13430",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Generating your multilingual site..."
+        },
+        "12/body/14/argument/5/3/expression/right/5/3/1": {
+          "type": "element",
+          "hash": "698aebc8c207afd6c7e55f726fb5e012",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Or create manually"
+        },
+        "12/body/14/argument/5/3/expression/right/7/1/1": {
+          "type": "element",
+          "hash": "3211256571b4ab2ae21b6c6e08608ee8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Manual Setup"
+        },
+        "12/body/14/argument/5/3/expression/right/7/3/1/1": {
+          "type": "element",
+          "hash": "dd546200ce6ed6eab0675a2324498b34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Name"
+        },
+        "12/body/14/argument/5/3/expression/right/7/3/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "c37352d389be060b48a77dc266f32a50",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "My Awesome Website"
+        },
+        "12/body/14/argument/5/3/expression/right/7/3/3/1": {
+          "type": "element",
+          "hash": "769fd2bb957e126159f8bdc0e5b2d764",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Domain (optional)"
+        },
+        "12/body/14/argument/5/3/expression/right/7/3/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "2b7b8bf1478064f391e4059418cadefc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "mywebsite.com"
+        },
+        "12/body/14/argument/5/3/expression/right/7/3/5": {
+          "type": "element",
+          "hash": "1254cf3bddad9ecaa3aa84079d5bffe2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Continue"
+        },
+        "12/body/14/argument/5/5/expression/right/1/1": {
+          "type": "element",
+          "hash": "645e344c0f52319fa50bb3a91542c3dd",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Let's create your site"
+        },
+        "12/body/14/argument/5/5/expression/right/1/3": {
+          "type": "element",
+          "hash": "ac9e9a0ca5608274fb2b491ba35f162b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Describe your website idea and we'll generate it for you"
+        },
+        "12/body/14/argument/5/5/expression/right/3/1/1": {
+          "type": "element",
+          "hash": "57bc379c782e47e6895dd3c230bd9c68",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Sparkles></element:Sparkles> AI-Powered Generation"
+        },
+        "12/body/14/argument/5/5/expression/right/3/3/1/1": {
+          "type": "element",
+          "hash": "277fd1a41cc237a437cd1d5e4a80463b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Language"
+        },
+        "12/body/14/argument/5/5/expression/right/3/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "daa1e8455d6564558de62cec75d2ca55",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Describe your website... (e.g., 'A modern e-commerce site for selling handmade jewelry')"
+        },
+        "12/body/14/argument/5/5/expression/right/3/3/5/expression/right/1": {
+          "type": "element",
+          "hash": "b44eef0bb6fd0b92a3f4852badb13430",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Generating your multilingual site..."
+        },
+        "12/body/14/argument/5/5/expression/right/5/3/1": {
+          "type": "element",
+          "hash": "698aebc8c207afd6c7e55f726fb5e012",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Or create manually"
+        },
+        "12/body/14/argument/5/5/expression/right/7/1/1": {
+          "type": "element",
+          "hash": "3211256571b4ab2ae21b6c6e08608ee8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Manual Setup"
+        },
+        "12/body/14/argument/5/5/expression/right/7/3/1/1": {
+          "type": "element",
+          "hash": "dd546200ce6ed6eab0675a2324498b34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Name"
+        },
+        "12/body/14/argument/5/5/expression/right/7/3/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "c37352d389be060b48a77dc266f32a50",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "My Awesome Website"
+        },
+        "12/body/14/argument/5/5/expression/right/7/3/3/1": {
+          "type": "element",
+          "hash": "769fd2bb957e126159f8bdc0e5b2d764",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Domain (optional)"
+        },
+        "12/body/14/argument/5/5/expression/right/7/3/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "2b7b8bf1478064f391e4059418cadefc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "mywebsite.com"
+        },
+        "12/body/14/argument/5/5/expression/right/7/3/5": {
+          "type": "element",
+          "hash": "1254cf3bddad9ecaa3aa84079d5bffe2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Continue"
+        },
+        "12/body/14/argument/5/7/expression/right/1/1": {
+          "type": "element",
+          "hash": "481b182b084480dc27f1512a46da7a68",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Choose languages"
+        },
+        "12/body/14/argument/5/7/expression/right/1/3": {
+          "type": "element",
+          "hash": "86789b761076d6ee0ec4de8c27777ea0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Select the languages you want your site to support"
+        },
+        "12/body/14/argument/5/7/expression/right/3/1/1/1": {
+          "type": "element",
+          "hash": "f6a7c369125309829ea028842a83fd76",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Popular Languages"
+        },
+        "12/body/14/argument/5/7/expression/right/3/1/1/3": {
+          "type": "element",
+          "hash": "b2a412ccb077521cbfdd9f409c5097d4",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "{selectedLanguages.length} selected"
+        },
+        "12/body/14/argument/5/7/expression/right/3/3/3": {
+          "type": "element",
+          "hash": "3754158a94db19da9521b85a56f76437",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Globe></element:Globe> Add More Languages"
+        },
+        "12/body/14/argument/5/7/expression/right/5/1": {
+          "type": "element",
+          "hash": "94a7abecb2a3b70a4420a9e9a13df1cb",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back"
+        },
+        "12/body/14/argument/5/7/expression/right/5/3": {
+          "type": "element",
+          "hash": "936f50bec7caf704d3e6dc7eef8b8991",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Continue"
+        },
+        "12/body/14/argument/5/9/expression/right/1/1": {
+          "type": "element",
+          "hash": "481b182b084480dc27f1512a46da7a68",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Choose languages"
+        },
+        "12/body/14/argument/5/9/expression/right/1/3": {
+          "type": "element",
+          "hash": "86789b761076d6ee0ec4de8c27777ea0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Select the languages you want your site to support"
+        },
+        "12/body/14/argument/5/9/expression/right/3/1/1/1": {
+          "type": "element",
+          "hash": "f6a7c369125309829ea028842a83fd76",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Popular Languages"
+        },
+        "12/body/14/argument/5/9/expression/right/3/1/1/3": {
+          "type": "element",
+          "hash": "b2a412ccb077521cbfdd9f409c5097d4",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "{selectedLanguages.length} selected"
+        },
+        "12/body/14/argument/5/9/expression/right/3/3/3": {
+          "type": "element",
+          "hash": "3754158a94db19da9521b85a56f76437",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Globe></element:Globe> Add More Languages"
+        },
+        "12/body/14/argument/5/9/expression/right/5/1": {
+          "type": "element",
+          "hash": "94a7abecb2a3b70a4420a9e9a13df1cb",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back"
+        },
+        "12/body/14/argument/5/9/expression/right/5/3": {
+          "type": "element",
+          "hash": "936f50bec7caf704d3e6dc7eef8b8991",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Continue"
+        },
+        "12/body/15/argument/3/1/1/1/1/1": {
+          "type": "element",
+          "hash": "50aeb06137ab55a288b9c12c1b8bf466",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:ArrowLeft></element:ArrowLeft> Back"
+        },
+        "12/body/15/argument/3/1/1/1/3": {
+          "type": "element",
+          "hash": "cffdf5c0ad015bea0b0e5124b29b14b7",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Create New Site"
+        },
+        "12/body/15/argument/3/1/1/3/1": {
+          "type": "element",
+          "hash": "e5862569dfd352ac68a7c0accd6cede2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Step {step} of 3"
+        },
+        "12/body/15/argument/5/11/expression/right/1/1": {
+          "type": "element",
+          "hash": "628557cf8e15187f5b16ab9219aad860",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Review your site"
+        },
+        "12/body/15/argument/5/11/expression/right/1/3": {
+          "type": "element",
+          "hash": "68a274f796f75339783bbecf2198e663",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Everything looks good? Let's create it!"
+        },
+        "12/body/15/argument/5/11/expression/right/3/1/1": {
+          "type": "element",
+          "hash": "aa0ca4f48bf0dc73a7dbd759e334d5ac",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Site Details"
+        },
+        "12/body/15/argument/5/11/expression/right/3/3/1/1": {
+          "type": "element",
+          "hash": "dd546200ce6ed6eab0675a2324498b34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Name"
+        },
+        "12/body/15/argument/5/11/expression/right/3/3/3/expression/right/1": {
+          "type": "element",
+          "hash": "402d46965eacc3af4c5df92e53e95712",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Domain"
+        },
+        "12/body/15/argument/5/11/expression/right/3/3/5/1": {
+          "type": "element",
+          "hash": "b064f2912c2985a0d8be3e5d8b1946b2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Languages ({selectedLanguages.length})"
+        },
+        "12/body/15/argument/5/11/expression/right/3/3/7/expression/right/1": {
+          "type": "element",
+          "hash": "af55e714fc3967e2fbb56e56325bae72",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "AI Prompt"
+        },
+        "12/body/15/argument/5/11/expression/right/5/1": {
+          "type": "element",
+          "hash": "94a7abecb2a3b70a4420a9e9a13df1cb",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back"
+        },
+        "12/body/15/argument/5/11/expression/right/5/3": {
+          "type": "element",
+          "hash": "fb845c4f1958440b0f46cca5f11b7c71",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Sparkles></element:Sparkles> Create Site"
+        },
+        "12/body/15/argument/5/3/expression/right/1/1": {
+          "type": "element",
+          "hash": "645e344c0f52319fa50bb3a91542c3dd",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Let's create your site"
+        },
+        "12/body/15/argument/5/3/expression/right/1/3": {
+          "type": "element",
+          "hash": "ac9e9a0ca5608274fb2b491ba35f162b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Describe your website idea and we'll generate it for you"
+        },
+        "12/body/15/argument/5/3/expression/right/3/1/1": {
+          "type": "element",
+          "hash": "57bc379c782e47e6895dd3c230bd9c68",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Sparkles></element:Sparkles> AI-Powered Generation"
+        },
+        "12/body/15/argument/5/3/expression/right/3/3/1/1": {
+          "type": "element",
+          "hash": "277fd1a41cc237a437cd1d5e4a80463b",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Language"
+        },
+        "12/body/15/argument/5/3/expression/right/3/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "daa1e8455d6564558de62cec75d2ca55",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Describe your website... (e.g., 'A modern e-commerce site for selling handmade jewelry')"
+        },
+        "12/body/15/argument/5/3/expression/right/3/3/5/expression/right/1": {
+          "type": "element",
+          "hash": "b44eef0bb6fd0b92a3f4852badb13430",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Generating your multilingual site..."
+        },
+        "12/body/15/argument/5/3/expression/right/5/3/1": {
+          "type": "element",
+          "hash": "698aebc8c207afd6c7e55f726fb5e012",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Or create manually"
+        },
+        "12/body/15/argument/5/3/expression/right/7/1/1": {
+          "type": "element",
+          "hash": "3211256571b4ab2ae21b6c6e08608ee8",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Manual Setup"
+        },
+        "12/body/15/argument/5/3/expression/right/7/3/1/1": {
+          "type": "element",
+          "hash": "dd546200ce6ed6eab0675a2324498b34",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Project Name"
+        },
+        "12/body/15/argument/5/3/expression/right/7/3/1/3-placeholder": {
+          "type": "attribute",
+          "hash": "c37352d389be060b48a77dc266f32a50",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "My Awesome Website"
+        },
+        "12/body/15/argument/5/3/expression/right/7/3/3/1": {
+          "type": "element",
+          "hash": "769fd2bb957e126159f8bdc0e5b2d764",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Domain (optional)"
+        },
+        "12/body/15/argument/5/3/expression/right/7/3/3/3-placeholder": {
+          "type": "attribute",
+          "hash": "2b7b8bf1478064f391e4059418cadefc",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "mywebsite.com"
+        },
+        "12/body/15/argument/5/3/expression/right/7/3/5": {
+          "type": "element",
+          "hash": "1254cf3bddad9ecaa3aa84079d5bffe2",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Continue"
+        },
+        "12/body/15/argument/5/7/expression/right/1/1": {
+          "type": "element",
+          "hash": "481b182b084480dc27f1512a46da7a68",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Choose languages"
+        },
+        "12/body/15/argument/5/7/expression/right/1/3": {
+          "type": "element",
+          "hash": "86789b761076d6ee0ec4de8c27777ea0",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Select the languages you want your site to support"
+        },
+        "12/body/15/argument/5/7/expression/right/3/1/1/1": {
+          "type": "element",
+          "hash": "f6a7c369125309829ea028842a83fd76",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Popular Languages"
+        },
+        "12/body/15/argument/5/7/expression/right/3/1/1/3": {
+          "type": "element",
+          "hash": "b2a412ccb077521cbfdd9f409c5097d4",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "{selectedLanguages.length} selected"
+        },
+        "12/body/15/argument/5/7/expression/right/3/3/3": {
+          "type": "element",
+          "hash": "3754158a94db19da9521b85a56f76437",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "<element:Globe></element:Globe> Add More Languages"
+        },
+        "12/body/15/argument/5/7/expression/right/5/1": {
+          "type": "element",
+          "hash": "94a7abecb2a3b70a4420a9e9a13df1cb",
+          "context": "",
+          "skip": false,
+          "overrides": {},
+          "content": "Back"
+        },
+        "12/body/15/argument/5/7/expression/right/5/3": {
           "type": "element",
           "hash": "936f50bec7caf704d3e6dc7eef8b8991",
           "context": "",

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Space_Grotesk } from 'next/font/google'
 import { LingoProvider, loadDictionary } from 'lingo.dev/react/rsc'
+import { AuthProvider } from '@/components/providers/auth-provider'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -23,7 +24,9 @@ export default function RootLayout({
   return (
     <LingoProvider loadDictionary={(locale) => loadDictionary(locale)}>
       <html lang="en" data-scroll-behavior="smooth">
-        <body className={`${spaceGrotesk.variable} antialiased`}>{children}</body>
+        <body className={`${spaceGrotesk.variable} antialiased`}>
+          <AuthProvider>{children}</AuthProvider>
+        </body>
       </html>
     </LingoProvider>
   )

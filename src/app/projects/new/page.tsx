@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { PromptInputBox } from '@/components/ui/ai-prompt-box'
 import { TextShimmer } from '@/components/ui/text-shimmer'
+import { useAuth } from '@/components/providers/auth-provider'
 
 const popularLanguages = [
   { code: 'en', name: 'English', flag: '🇬🇧' },
@@ -27,6 +28,7 @@ const popularLanguages = [
 function NewProjectPage() {
   const router = useRouter()
   const searchParams = useSearchParams()
+  const { getAccessToken, user, isLoading } = useAuth()
   const [step, setStep] = useState(1)
   const [projectName, setProjectName] = useState('')
   const [projectUrl, setProjectUrl] = useState('')
@@ -68,6 +70,13 @@ function NewProjectPage() {
     setIsGenerating(true)
 
     try {
+      if (!user) {
+        alert('Please sign in to generate and publish a site.')
+        setIsGenerating(false)
+        router.push('/auth')
+        return
+      }
+
       const response = await fetch('/api/generate-component', {
         method: 'POST',
         headers: {
@@ -83,16 +92,44 @@ function NewProjectPage() {
       const data = await response.json()
 
       if (data.success) {
-        // Store component in localStorage (temporary solution)
-        localStorage.setItem(`component_${data.component.id}`, JSON.stringify(data.component))
+        const accessToken = await getAccessToken()
+
+        if (!accessToken) {
+          alert('You must be signed in to publish a site.')
+          setIsGenerating(false)
+          return
+        }
+
+        const saveResponse = await fetch('/api/projects', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${accessToken}`,
+          },
+          body: JSON.stringify({
+            name: data.component.projectName,
+            jsxSource: data.component.code,
+            jsxLocalized: data.component.localizedCode,
+            language: data.component.language,
+          }),
+        })
+
+        const saveData = await saveResponse.json()
+
+        if (!saveResponse.ok || !saveData?.success) {
+          console.error('Failed to persist project:', saveData)
+          alert('Failed to save project. Please try again.')
+          setIsGenerating(false)
+          return
+        }
 
         // Set project details
         setProjectName(data.component.projectName)
         setProjectUrl('mywebsite.com')
         setIsGenerating(false)
 
-        // Navigate to live preview
-        router.push(data.liveUrl)
+        // Redirect to the public site route
+        router.push(`/site/${saveData.slug}`)
       } else {
         throw new Error(data.error || 'Failed to generate component')
       }
@@ -102,13 +139,6 @@ function NewProjectPage() {
       // Show error to user (you can add a toast notification here)
       alert('Failed to generate component. Please try again.')
     }
-  }
-
-  const handleCreate = () => {
-    // Simulate project creation
-    setTimeout(() => {
-      router.push('/dashboard')
-    }, 500)
   }
 
   return (
@@ -134,6 +164,19 @@ function NewProjectPage() {
       </header>
 
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        {!isLoading && !user && (
+          <div className="mb-8 border-2 border-amber-400 bg-amber-50 text-amber-900 text-sm rounded-base px-4 py-3">
+            <p className="font-heading mb-1">You&apos;re browsing as a guest.</p>
+            <p>
+              Sign in or create an account to save and publish sites to your dashboard.
+            </p>
+            <div className="mt-3 flex gap-2">
+              <Button size="sm" onClick={() => router.push('/auth')}>
+                Sign In / Sign Up
+              </Button>
+            </div>
+          </div>
+        )}
         {/* Step 1: AI Generation or Manual */}
         {step === 1 && (
           <div className="space-y-8">
@@ -325,7 +368,11 @@ function NewProjectPage() {
               <Button variant="noShadow" onClick={() => setStep(2)} className="flex-1">
                 Back
               </Button>
-              <Button onClick={handleCreate} className="flex-1">
+              <Button
+                type="button"
+                onClick={() => router.push('/dashboard')}
+                className="flex-1"
+              >
                 <Sparkles className="w-4 h-4 mr-2" />
                 Create Site
               </Button>

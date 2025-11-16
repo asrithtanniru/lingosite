@@ -1,24 +1,28 @@
 'use client'
 
-import { useState } from 'react'
+import { FormEvent, useEffect, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs'
 import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+import { useAuth } from '@/components/providers/auth-provider'
 
 export default function AuthPage() {
-  const [isLoading, setIsLoading] = useState(false)
+  const router = useRouter()
+  const { signInWithEmail, signUpWithEmail, isLoading, user } = useAuth()
+  const [signupError, setSignupError] = useState<string | null>(null)
+  const [signinError, setSigninError] = useState<string | null>(null)
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    setIsLoading(true)
-    // Simulate API call
-    setTimeout(() => {
-      setIsLoading(false)
-      // Redirect to dashboard
-      window.location.href = '/dashboard'
-    }, 1500)
+  // Redirect signed-in users to the dashboard via an effect
+  useEffect(() => {
+    if (!user) return
+    router.replace('/dashboard')
+  }, [router, user])
+
+  if (user) {
+    return null
   }
 
   return (
@@ -46,18 +50,46 @@ export default function AuthPage() {
 
               {/* Sign In Tab */}
               <TabsContent value="signin">
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form
+                  className="space-y-4"
+                  onSubmit={async (e: FormEvent<HTMLFormElement>) => {
+                    e.preventDefault()
+                    setSigninError(null)
+                    const formData = new FormData(e.currentTarget)
+                    const email = String(formData.get('signin-email') || '')
+                    const password = String(formData.get('signin-password') || '')
+                    try {
+                      await signInWithEmail(email, password)
+                      router.push('/dashboard')
+                    } catch (error) {
+                      console.error(error)
+                      setSigninError('Failed to sign in. Please check your credentials.')
+                    }
+                  }}
+                >
                   <div className="space-y-2">
                     <label htmlFor="signin-email" className="text-sm font-base">
                       Email
                     </label>
-                    <Input id="signin-email" type="email" placeholder="you@example.com" required />
+                    <Input
+                      id="signin-email"
+                      name="signin-email"
+                      type="email"
+                      placeholder="you@example.com"
+                      required
+                    />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="signin-password" className="text-sm font-base">
                       Password
                     </label>
-                    <Input id="signin-password" type="password" placeholder="••••••••" required />
+                    <Input
+                      id="signin-password"
+                      name="signin-password"
+                      type="password"
+                      placeholder="••••••••"
+                      required
+                    />
                   </div>
                   <div className="flex items-center justify-between text-sm">
                     <label className="flex items-center gap-2 cursor-pointer">
@@ -68,6 +100,11 @@ export default function AuthPage() {
                       Forgot password?
                     </a>
                   </div>
+                  {signinError && (
+                    <p className="text-sm text-red-600" role="alert">
+                      {signinError}
+                    </p>
+                  )}
                   <Button type="submit" className="w-full" disabled={isLoading}>
                     {isLoading ? 'Signing in...' : 'Sign In'}
                   </Button>
@@ -76,30 +113,75 @@ export default function AuthPage() {
 
               {/* Sign Up Tab */}
               <TabsContent value="signup">
-                <form onSubmit={handleSubmit} className="space-y-4">
+                <form
+                  className="space-y-4"
+                  onSubmit={async (e: FormEvent<HTMLFormElement>) => {
+                    e.preventDefault()
+                    setSignupError(null)
+                    const formData = new FormData(e.currentTarget)
+                    const email = String(formData.get('signup-email') || '')
+                    const password = String(formData.get('signup-password') || '')
+                    const confirm = String(formData.get('signup-confirm') || '')
+                    if (password !== confirm) {
+                      setSignupError('Passwords do not match.')
+                      return
+                    }
+                    try {
+                      await signUpWithEmail(email, password)
+                      router.push('/dashboard')
+                    } catch (error) {
+                      console.error(error)
+                      setSignupError('Failed to sign up. Please try again.')
+                    }
+                  }}
+                >
                   <div className="space-y-2">
                     <label htmlFor="signup-name" className="text-sm font-base">
                       Full Name
                     </label>
-                    <Input id="signup-name" type="text" placeholder="John Doe" required />
+                    <Input
+                      id="signup-name"
+                      name="signup-name"
+                      type="text"
+                      placeholder="John Doe"
+                      required
+                    />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="signup-email" className="text-sm font-base">
                       Email
                     </label>
-                    <Input id="signup-email" type="email" placeholder="you@example.com" required />
+                    <Input
+                      id="signup-email"
+                      name="signup-email"
+                      type="email"
+                      placeholder="you@example.com"
+                      required
+                    />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="signup-password" className="text-sm font-base">
                       Password
                     </label>
-                    <Input id="signup-password" type="password" placeholder="••••••••" required />
+                    <Input
+                      id="signup-password"
+                      name="signup-password"
+                      type="password"
+                      placeholder="••••••••"
+                      required
+                    />
                   </div>
                   <div className="space-y-2">
                     <label htmlFor="signup-confirm" className="text-sm font-base">
                       Confirm Password
                     </label>
-                    <Input id="signup-confirm" type="password" placeholder="••••••••" required />
+                    <Input
+                      id="signup-confirm"
+                      name="signup-confirm"
+                      type="password"
+                      placeholder="••••••••"
+                      required
+                    />
                   </div>
                   <div className="text-sm text-foreground/70">
                     By signing up, you agree to our{' '}
@@ -111,6 +193,11 @@ export default function AuthPage() {
                       Privacy Policy
                     </a>
                   </div>
+                  {signupError && (
+                    <p className="text-sm text-red-600" role="alert">
+                      {signupError}
+                    </p>
+                  )}
                   <Button type="submit" className="w-full" disabled={isLoading}>
                     {isLoading ? 'Creating account...' : 'Sign Up'}
                   </Button>
