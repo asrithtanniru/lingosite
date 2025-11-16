@@ -1,47 +1,67 @@
-import type { Metadata } from 'next'
+'use client'
+
+import { useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { PlusCircle, Eye } from 'lucide-react'
 import Link from 'next/link'
-import { supabaseServiceClient } from '@/lib/supabase-service'
-import { cookies } from 'next/headers'
-import { redirect } from 'next/navigation'
+import { supabaseBrowserClient } from '@/lib/supabase-browser'
+import { useAuth } from '@/components/providers/auth-provider'
 
-export const metadata: Metadata = {
-  title: 'Dashboard - LingoSite',
+type ProjectRow = {
+  slug: string
+  language: string | null
+  created_at: string | null
 }
 
-async function getUserProjects() {
-  const cookieStore = await cookies()
-  const accessToken = cookieStore.get('sb-access-token')?.value
+export default function DashboardPage() {
+  const router = useRouter()
+  const { user, isLoading, getAccessToken } = useAuth()
+  const [projects, setProjects] = useState<ProjectRow[]>([])
+  const [isProjectsLoading, setIsProjectsLoading] = useState(false)
 
-  if (!accessToken) {
-    redirect('/auth')
-  }
+  useEffect(() => {
+    if (isLoading) return
 
-  const { data: userResult } = await supabaseServiceClient.auth.getUser(accessToken)
-  const userId = userResult?.user?.id
-  if (!userId) {
-    redirect('/auth')
-  }
+    if (!user) {
+      router.replace('/auth')
+      return
+    }
 
-  const { data, error } = await supabaseServiceClient
-    .from('projects')
-    .select('slug, language, created_at')
-    .eq('user_id', userId)
-    .eq('is_published', true)
-    .order('created_at', { ascending: false })
+    const loadProjects = async () => {
+      try {
+        setIsProjectsLoading(true)
+        const accessToken = await getAccessToken()
+        if (!accessToken) {
+          router.replace('/auth')
+          return
+        }
 
-  if (error) {
-    console.error('Failed to load projects:', error)
-    return []
-  }
+        const {
+          data,
+          error,
+        } = await supabaseBrowserClient
+          .from('projects')
+          .select('slug, language, created_at')
+          .eq('user_id', user.id)
+          .eq('is_published', true)
+          .order('created_at', { ascending: false })
 
-  return data ?? []
-}
+        if (error) {
+          console.error('Failed to load projects:', error)
+          setProjects([])
+          return
+        }
 
-export default async function DashboardPage() {
-  const projects = await getUserProjects()
+        setProjects(data ?? [])
+      } finally {
+        setIsProjectsLoading(false)
+      }
+    }
+
+    void loadProjects()
+  }, [getAccessToken, isLoading, router, user])
 
   return (
     <div className="min-h-screen bg-background">
@@ -73,11 +93,15 @@ export default async function DashboardPage() {
             <CardTitle>Your Projects</CardTitle>
           </CardHeader>
           <CardContent>
-            {projects.length === 0 ? (
+            {(isLoading || isProjectsLoading) && (
+              <p className="text-sm text-foreground/70">Loading your projects...</p>
+            )}
+            {!isLoading && !isProjectsLoading && projects.length === 0 && (
               <p className="text-sm text-foreground/70">
                 You don&apos;t have any published projects yet. Create a new site to see it here.
               </p>
-            ) : (
+            )}
+            {!isLoading && !isProjectsLoading && projects.length > 0 && (
               <div className="space-y-4">
                 {projects.map((project) => (
                   <div

@@ -1,6 +1,6 @@
 'use client'
 
-import { FormEvent, useEffect, useState } from 'react'
+import { FormEvent, useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
@@ -14,16 +14,6 @@ export default function AuthPage() {
   const { signInWithEmail, signUpWithEmail, isLoading, user } = useAuth()
   const [signupError, setSignupError] = useState<string | null>(null)
   const [signinError, setSigninError] = useState<string | null>(null)
-
-  // Redirect signed-in users to the dashboard via an effect
-  useEffect(() => {
-    if (!user) return
-    router.replace('/dashboard')
-  }, [router, user])
-
-  if (user) {
-    return null
-  }
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-background">
@@ -39,7 +29,11 @@ export default function AuthPage() {
         <Card>
           <CardHeader className="text-center">
             <CardTitle className="text-2xl font-heading">Welcome</CardTitle>
-            <CardDescription>Sign in to your account or create a new one</CardDescription>
+            <CardDescription>
+              {user
+                ? 'You are already signed in. You can go to your dashboard or sign out.'
+                : 'Sign in to your account or create a new one'}
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <Tabs defaultValue="signin" className="w-full">

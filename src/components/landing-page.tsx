@@ -1,5 +1,4 @@
 'use client'
-'use i18n'
 
 import { useState, useEffect } from 'react'
 import { HeroSection } from './sections/hero-section'
