@@ -1,76 +1,61 @@
-import { notFound } from 'next/navigation'
-import Link from 'next/link'
-import { getProject } from '@/lib/project-store'
-import { Button } from '@/components/ui/button'
-import { GeneratedSiteViewer } from '@/components/generated-site-viewer'
+'use client'
 
-type SitePageProps = {
-  params: { id: string }
-  searchParams?: { lang?: string }
-}
+import { useEffect, useState } from 'react'
+import { notFound, useParams, useSearchParams } from 'next/navigation'
+import { LiveProvider, LivePreview, LiveError } from 'react-live'
 
-export default function SitePage({ params, searchParams }: SitePageProps) {
-  const project = getProject(params.id)
+export default function SitePage() {
+  const params = useParams()
+  const searchParams = useSearchParams()
+  const componentId = params?.id as string
+  const [componentData, setComponentData] = useState<any>(null)
+  const [loading, setLoading] = useState(true)
 
-  if (!project) {
+  useEffect(() => {
+    // Get component from localStorage
+    const storedComponent = localStorage.getItem(`component_${componentId}`)
+    if (storedComponent) {
+      setComponentData(JSON.parse(storedComponent))
+    }
+    setLoading(false)
+  }, [componentId])
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
+      </div>
+    )
+  }
+
+  if (!componentData) {
     notFound()
   }
 
-  const langParam = searchParams?.lang
-  const preferredLocale =
-    (langParam && project.availableLocales.includes(langParam)) || !langParam
-      ? langParam
-      : project.language
+  const langParam = searchParams?.get('lang')
+  const activeLocale = langParam || componentData.language || 'en'
 
-  const activeLocale = preferredLocale ?? project.language ?? project.sourceLocale
+  // Get the JSX to render
+  let jsxToRender = componentData.code
+  if (componentData.localizedCode && activeLocale !== 'en') {
+    jsxToRender = componentData.localizedCode
+  }
 
-  const localizedJsx =
-    activeLocale === project.sourceLocale ? null : project.localizedJsx[activeLocale]
+  // Wrap JSX for rendering
+  const wrappedCode = `function Component() {
+  return (
+    ${jsxToRender}
+  );
+}
+
+render(<Component />);`
 
   return (
-    <div className="min-h-screen bg-background">
-      <header className="border-b-2 border-border bg-secondary-background">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <Link href="/dashboard">
-              <Button variant="noShadow" size="sm">
-                Back to Dashboard
-              </Button>
-            </Link>
-            <div>
-              <h1 className="text-xl font-heading">{project.name}</h1>
-              <p className="text-sm text-foreground/70">
-                Live site • {activeLocale.toUpperCase()}
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center gap-2 text-sm text-foreground/70">
-            <span>Available:</span>
-            <div className="flex gap-1">
-              {project.availableLocales.map((code) => (
-                <Link
-                  key={code}
-                  href={`/site/${project.id}?lang=${code}`}
-                  className={`px-2 py-0.5 rounded-base border text-xs ${
-                    code === activeLocale ? 'border-main bg-main/10' : 'border-border'
-                  }`}
-                >
-                  {code.toUpperCase()}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </div>
-      </header>
-
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        <GeneratedSiteViewer
-          sourceCode={project.sourceJsx}
-          localizedCode={localizedJsx}
-          language={activeLocale}
-          expectedLocalized={activeLocale !== project.sourceLocale}
-        />
-      </main>
+    <div className="min-h-screen">
+      <LiveProvider code={wrappedCode} noInline={true}>
+        <LivePreview />
+        <LiveError className="fixed bottom-4 right-4 max-w-lg p-4 bg-red-50 border-2 border-red-500 rounded text-red-800 text-sm shadow-lg" />
+      </LiveProvider>
     </div>
   )
 }
