@@ -11,66 +11,47 @@ type GeneratedSiteViewerProps = {
   expectedLocalized?: boolean
 }
 
-export function GeneratedSiteViewer({
-  sourceCode,
-  localizedCode,
-  language,
-  expectedLocalized = false,
-}: GeneratedSiteViewerProps) {
-  const [view, setView] = useState<'source' | 'localized'>(
-    localizedCode && language !== 'en' ? 'localized' : 'source',
-  )
+export function GeneratedSiteViewer({ sourceCode, localizedCode, language, expectedLocalized = false }: GeneratedSiteViewerProps) {
+  const [view, setView] = useState<'source' | 'localized'>(localizedCode && language !== 'en' ? 'localized' : 'source')
 
-  const { wrappedSourceCode, cleanedLocalizedHtml, fallbackHtml, hasLocalized } = useMemo(() => {
+  const { wrappedSourceCode, wrappedLocalizedCode, hasLocalized } = useMemo(() => {
     const trimmedSource = sourceCode?.trim?.() ?? ''
     const trimmedLocalized = localizedCode?.trim?.() ?? ''
-    const hasLocalizedVariant =
-      Boolean(trimmedLocalized.length > 0) && trimmedLocalized !== trimmedSource
+    const hasLocalizedVariant = Boolean(trimmedLocalized.length > 0) && trimmedLocalized !== trimmedSource
 
-    const buildWrappedCode = (body: string) => `function Component() {
+    const buildWrappedCode = (body: string) => {
+      // Strip JSX comments that might break rendering
+      const cleaned = body.replace(/\{\/\*[\s\S]*?\*\/\}/g, '')
+      return `function Component() {
   return (
-    ${body}
+    ${cleaned}
   );
 }
 
 render(<Component />);`
-
-    const stripJsxComments = (input: string) =>
-      input.replace(/\{\/\*[\s\S]*?\*\/\}/g, '')
+    }
 
     return {
       wrappedSourceCode: buildWrappedCode(sourceCode),
-      cleanedLocalizedHtml: hasLocalizedVariant
-        ? stripJsxComments(localizedCode || '')
-        : '',
-      fallbackHtml: hasLocalizedVariant ? trimmedLocalized : trimmedSource,
+      wrappedLocalizedCode: hasLocalizedVariant ? buildWrappedCode(trimmedLocalized) : '',
       hasLocalized: hasLocalizedVariant && language !== 'en',
     }
-  }, [language, localizedCode, sourceCode, view])
+  }, [language, localizedCode, sourceCode])
 
   return (
     <div className="space-y-4">
       {expectedLocalized && !hasLocalized && language !== 'en' && (
         <div className="border-2 border-amber-400 bg-amber-50 text-amber-900 text-sm rounded-base px-4 py-3">
-          Translation for <span className="font-semibold">{language.toUpperCase()}</span> is
-          temporarily unavailable. Showing the original English version instead.
+          Translation for <span className="font-semibold">{language.toUpperCase()}</span> is temporarily unavailable. Showing the original English version instead.
         </div>
       )}
       <div className="flex items-center justify-between gap-4">
         <div className="flex gap-2">
-          <Button
-            size="sm"
-            variant={view === 'source' ? 'default' : 'noShadow'}
-            onClick={() => setView('source')}
-          >
+          <Button size="sm" variant={view === 'source' ? 'default' : 'noShadow'} onClick={() => setView('source')}>
             Original (English)
           </Button>
           {hasLocalized && (
-            <Button
-              size="sm"
-              variant={view === 'localized' ? 'default' : 'noShadow'}
-              onClick={() => setView('localized')}
-            >
+            <Button size="sm" variant={view === 'localized' ? 'default' : 'noShadow'} onClick={() => setView('localized')}>
               Localized ({language.toUpperCase()})
             </Button>
           )}
@@ -88,10 +69,10 @@ render(<Component />);`
 
       {view === 'localized' && hasLocalized && (
         <div className="border-2 border-border rounded-base bg-white p-8 min-h-[600px]">
-          <div
-            className="w-full h-full"
-            dangerouslySetInnerHTML={{ __html: cleanedLocalizedHtml || fallbackHtml }}
-          />
+          <LiveProvider code={wrappedLocalizedCode} noInline={true}>
+            <LivePreview />
+            <LiveError className="mt-4 p-4 bg-red-50 border-2 border-red-500 rounded text-red-800 text-sm" />
+          </LiveProvider>
         </div>
       )}
     </div>

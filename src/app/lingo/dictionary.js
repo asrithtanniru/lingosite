@@ -5,16 +5,16 @@ export default {
       entries: {
         "4/declaration/body/2/argument/1/expression/right": {
           content: {
-            bn: "<element:span><function:language.toUpperCase/></element:span> এর অনুবাদ সাময়িকভাবে অনুপলব্ধ। এর পরিবর্তে মূল ইংরেজি সংস্করণ দেখানো হচ্ছে।",
+            bn: "<element:span><function:language.toUpperCase/></element:span> এর জন্য অনুবাদ সাময়িকভাবে অনুপলব্ধ। এর পরিবর্তে মূল ইংরেজি সংস্করণ দেখানো হচ্ছে।",
             de: "Übersetzung für <element:span><function:language.toUpperCase/></element:span> ist vorübergehend nicht verfügbar. Stattdessen wird die englische Originalversion angezeigt.",
             en: "Translation for <element:span><function:language.toUpperCase/></element:span> is temporarily unavailable. Showing the original English version instead.",
             es: "La traducción para <element:span><function:language.toUpperCase/></element:span> no está disponible temporalmente. Mostrando la versión original en inglés en su lugar.",
             fr: "La traduction pour <element:span><function:language.toUpperCase/></element:span> est temporairement indisponible. Affichage de la version originale en anglais à la place.",
             hi: "<element:span><function:language.toUpperCase/></element:span> के लिए अनुवाद अस्थायी रूप से अनुपलब्ध है। इसके बजाय मूल अंग्रेजी संस्करण दिखाया जा रहा है।",
-            ta: "<element:span><function:language.toUpperCase/></element:span> மொழிபெயர்ப்பு தற்காலிகமாக கிடைக்கவில்லை. அதற்கு பதிலாக அசல் ஆங்கில பதிப்பைக் காட்டுகிறது.",
-            te: "<element:span><function:language.toUpperCase/></element:span> కొరకు అనువాదం తాత్కాలికంగా అందుబాటులో లేదు. దీని బదులుగా అసలు ఇంగ్లీష్ వెర్షన్ చూపబడుతోంది.",
+            ta: "<element:span><function:language.toUpperCase/></element:span> மொழிபெயர்ப்பு தற்காலிகமாக கிடைக்கவில்லை. அதற்குப் பதிலாக அசல் ஆங்கில பதிப்பைக் காட்டுகிறது.",
+            te: "<element:span><function:language.toUpperCase/></element:span> కొరకు అనువాదం తాత్కాలికంగా అందుబాటులో లేదు. దీనికి బదులుగా అసలు ఇంగ్లీష్ వెర్షన్ చూపబడుతోంది.",
           },
-          hash: "a29cf7b0c49ad9952a23bc2a043babcd",
+          hash: "c6cb83c1adc63b1154bf9f89328b4348",
         },
         "4/declaration/body/2/argument/3/1/1": {
           content: {
