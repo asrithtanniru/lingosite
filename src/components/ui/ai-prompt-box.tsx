@@ -343,22 +343,16 @@ interface PromptInputActionProps extends React.ComponentProps<typeof Tooltip> {
   side?: 'top' | 'bottom' | 'left' | 'right'
   className?: string
 }
-const PromptInputAction: React.FC<PromptInputActionProps> = ({
-  tooltip,
-  children,
-  className,
-  side = 'top',
-  ...props
-}) => {
+
+const PromptInputAction: React.FC<PromptInputActionProps> = ({ tooltip, children, side = 'top', ...props }) => {
+
   const { disabled } = usePromptInput()
   return (
     <Tooltip {...props}>
       <TooltipTrigger asChild disabled={disabled}>
         {children}
       </TooltipTrigger>
-      <TooltipContent side={side} className={className}>
-        {tooltip}
-      </TooltipContent>
+      <TooltipContent side={side}>{tooltip}</TooltipContent>
     </Tooltip>
   )
 }
@@ -672,8 +666,8 @@ export const PromptInputBox = React.forwardRef((props: PromptInputBoxProps, ref:
                 isRecording
                   ? 'bg-transparent hover:bg-gray-600/30 text-red-500 hover:text-red-400'
                   : hasContent
-                  ? 'bg-white hover:bg-white/80 text-[#1F2023]'
-                  : 'bg-transparent hover:bg-gray-600/30 text-[#9CA3AF] hover:text-[#D1D5DB]'
+                    ? 'bg-white hover:bg-white/80 text-[#1F2023]'
+                    : 'bg-transparent hover:bg-gray-600/30 text-[#9CA3AF] hover:text-[#D1D5DB]'
               )}
               onClick={() => {
                 if (isRecording) setIsRecording(false)
