@@ -18,6 +18,28 @@ function getEngine() {
   return engine
 }
 
+function stripHtmlDocumentWrapper(html: string): string {
+  if (!html) return html
+
+  let output = html.trim()
+
+  // Remove <!doctype ...> if present
+  output = output.replace(/<!doctype[^>]*>/i, '').trim()
+
+  const bodyMatch = output.match(/<body[^>]*>([\s\S]*?)<\/body>/i)
+  if (bodyMatch && bodyMatch[1]) {
+    output = bodyMatch[1].trim()
+  }
+
+  // If the whole thing is still wrapped in a single <html> tag, unwrap it
+  const htmlMatch = output.match(/^<html[^>]*>([\s\S]*?)<\/html>$/i)
+  if (htmlMatch && htmlMatch[1]) {
+    output = htmlMatch[1].trim()
+  }
+
+  return output
+}
+
 export async function translateGeneratedJsx(
   jsxSource: string,
   sourceLocale: string,
@@ -32,16 +54,18 @@ export async function translateGeneratedJsx(
   }
 
   try {
-    const localized = await engineInstance.localizeHtml(jsxSource, {
+    const localizedHtml = await engineInstance.localizeHtml(jsxSource, {
       sourceLocale,
       targetLocale,
       fast: true,
     })
 
-    return localized
+    const stripped = stripHtmlDocumentWrapper(localizedHtml)
+
+    // Fallback to original if stripping produced an empty string
+    return stripped || jsxSource
   } catch (error) {
     console.error('Lingo.dev translation failed, returning source JSX:', error)
     return jsxSource
   }
 }
-

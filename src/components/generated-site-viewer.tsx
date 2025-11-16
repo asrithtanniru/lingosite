@@ -8,15 +8,24 @@ type GeneratedSiteViewerProps = {
   sourceCode: string
   localizedCode?: string | null
   language: string
+  expectedLocalized?: boolean
 }
 
-export function GeneratedSiteViewer({ sourceCode, localizedCode, language }: GeneratedSiteViewerProps) {
+export function GeneratedSiteViewer({
+  sourceCode,
+  localizedCode,
+  language,
+  expectedLocalized = false,
+}: GeneratedSiteViewerProps) {
   const [view, setView] = useState<'source' | 'localized'>(
     localizedCode && language !== 'en' ? 'localized' : 'source',
   )
 
   const { wrappedCode, hasLocalized } = useMemo(() => {
-    const hasLocalizedVariant = Boolean(localizedCode && localizedCode.trim().length > 0)
+    const trimmedSource = sourceCode?.trim?.() ?? ''
+    const trimmedLocalized = localizedCode?.trim?.() ?? ''
+    const hasLocalizedVariant =
+      Boolean(trimmedLocalized.length > 0) && trimmedLocalized !== trimmedSource
     const activeCode =
       view === 'localized' && hasLocalizedVariant && language !== 'en' ? localizedCode! : sourceCode
 
@@ -36,6 +45,12 @@ render(<Component />);`
 
   return (
     <div className="space-y-4">
+      {expectedLocalized && !hasLocalized && language !== 'en' && (
+        <div className="border-2 border-amber-400 bg-amber-50 text-amber-900 text-sm rounded-base px-4 py-3">
+          Translation for <span className="font-semibold">{language.toUpperCase()}</span> is
+          temporarily unavailable. Showing the original English version instead.
+        </div>
+      )}
       <div className="flex items-center justify-between gap-4">
         <div className="flex gap-2">
           <Button
@@ -66,4 +81,3 @@ render(<Component />);`
     </div>
   )
 }
-

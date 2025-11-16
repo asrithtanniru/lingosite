@@ -110,7 +110,12 @@ render(<Component />);`
               </Link>
               <div>
                 <h1 className="text-xl font-heading">{componentData.projectName}</h1>
-                <p className="text-sm text-foreground/70">Live Preview</p>
+                <p className="text-sm text-foreground/70">
+                  Live Preview •{' '}
+                  <span className="inline-flex items-center px-2 py-0.5 rounded-base border border-border text-xs font-base bg-secondary-background">
+                    {componentData.language ? componentData.language.toUpperCase() : 'EN'}
+                  </span>
+                </p>
               </div>
             </div>
             <div className="flex items-center gap-2">

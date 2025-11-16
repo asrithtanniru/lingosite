@@ -68,9 +68,9 @@ export default function SitePage({ params, searchParams }: SitePageProps) {
           sourceCode={project.sourceJsx}
           localizedCode={localizedJsx}
           language={activeLocale}
+          expectedLocalized={activeLocale !== project.sourceLocale}
         />
       </main>
     </div>
   )
 }
-
