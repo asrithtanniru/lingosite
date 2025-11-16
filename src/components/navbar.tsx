@@ -1,6 +1,7 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import { LanguageSwitcher } from '@/components/ui/language-switcher'
 import { cn } from '@/lib/utils'
 import Link from 'next/link'
 
@@ -36,6 +37,7 @@ export function Navbar({ scrolled }: NavbarProps) {
           </div>
 
           <div className="flex items-center gap-4">
+            <LanguageSwitcher />
             <Link href="/auth">
               <Button className="hidden sm:inline-flex">Sign In</Button>
             </Link>

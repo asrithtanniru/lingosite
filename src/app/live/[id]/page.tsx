@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { useParams } from 'next/navigation'
+import { useParams, useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { ArrowLeft, Code, Eye, Globe, Download } from 'lucide-react'
@@ -13,6 +13,7 @@ const sampleComponents: Record<string, any> = {}
 
 export default function LivePage() {
   const params = useParams()
+  const router = useRouter()
   const componentId = params?.id as string
   const [componentData, setComponentData] = useState<any>(null)
   const [isPreview, setIsPreview] = useState(true)
@@ -41,8 +42,7 @@ export default function LivePage() {
 
       await new Promise((resolve) => setTimeout(resolve, 2000))
 
-      // Generate a mock published URL
-      const publishUrl = `https://${componentData.projectName.toLowerCase().replace(/\s+/g, '-')}.linguallyric.app`
+      const publishUrl = `/site/${componentId}`
       setPublishedUrl(publishUrl)
       setIsPublished(true)
       setShowPublishModal(false)
@@ -51,6 +51,8 @@ export default function LivePage() {
       const updatedData = { ...componentData, published: true, publishedUrl: publishUrl }
       localStorage.setItem(`component_${componentId}`, JSON.stringify(updatedData))
       setComponentData(updatedData)
+
+      router.push(publishUrl)
     } catch (error) {
       console.error('Publish failed:', error)
       alert('Failed to publish. Please try again.')

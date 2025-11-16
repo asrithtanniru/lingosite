@@ -1,12 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { GoogleGenerativeAI } from '@google/generative-ai'
-
-// Initialize Gemini AI
-const genAI = new GoogleGenerativeAI('AIzaSyDKANNtXIcaeEF1pMOaO6lElC5uVfg1BDs')
+import { createProject } from '@/lib/project-store'
+import { translateGeneratedJsx } from '@/lib/lingo'
 
 export async function POST(request: NextRequest) {
   try {
-    const { prompt, projectName = 'My Website' } = await request.json()
+    const { prompt, projectName = 'My Website', language = 'en' } = await request.json()
 
     if (!prompt) {
       return NextResponse.json({ error: 'Prompt is required' }, { status: 400 })
@@ -16,25 +15,21 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Gemini API key not configured' }, { status: 500 })
     }
 
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY)
     const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' })
 
-    const componentTemplate = `
-You are a React component generator. Based on the user's prompt, create a single, complete React component using modern React practices and Tailwind CSS.
+    const componentTemplate = `You are generating a React page.
+Output a single self-contained JSX component for a marketing/landing page or simple website based on the user prompt.
+The JSX must be valid React code.
+Use English for all textual content (headings, paragraphs, buttons, etc.) because a separate localization system will translate it later.
+Do NOT include imports for React or Next; just the JSX tree or a single component body.
+Use Tailwind CSS classes for styling and a modern, responsive design.
+Use the project name "${projectName}" where appropriate.
 
-Rules:
-1. Return ONLY the JSX component code, no imports or exports
-2. Use Tailwind CSS classes for styling with a modern, clean design
-3. Make it responsive and visually appealing
-4. Use semantic HTML elements
-5. The component should be self-contained and functional
-6. Use the project name "${projectName}" where appropriate
-7. Include sample content that matches the prompt
-8. Use modern design patterns with good spacing and typography
+User prompt:
+${prompt}
 
-User prompt: ${prompt}
-
-Generate a React component:
-`
+Return ONLY the JSX.`
 
     const result = await model.generateContent(componentTemplate)
     const generatedCode = result.response.text()
@@ -53,24 +48,43 @@ Generate a React component:
       cleanCode = `<div>\n${cleanCode}\n</div>`
     }
 
-    // Generate a unique ID for this component
-    const componentId = Math.random().toString(36).substr(2, 9)
+    const sourceLocale = 'en'
+    const targetLanguage = language || sourceLocale
 
-    // Store the component (you can replace this with a database later)
-    const componentData = {
-      id: componentId,
-      code: cleanCode,
-      prompt,
-      projectName,
-      createdAt: new Date().toISOString(),
+    let localizedCode = cleanCode
+
+    if (targetLanguage && targetLanguage !== sourceLocale) {
+      localizedCode = await translateGeneratedJsx(cleanCode, sourceLocale, targetLanguage)
     }
 
-    // For now, we'll return the component data
-    // In production, you might want to store this in a database
+    const project = createProject({
+      name: projectName,
+      prompt,
+      language: targetLanguage,
+      sourceLocale,
+      sourceJsx: cleanCode,
+      localizedJsx:
+        targetLanguage !== sourceLocale
+          ? {
+              [targetLanguage]: localizedCode,
+            }
+          : {},
+    })
+
+    const componentData = {
+      id: project.id,
+      code: localizedCode,
+      prompt,
+      projectName: project.name,
+      language: targetLanguage,
+      createdAt: project.createdAt,
+    }
+
     return NextResponse.json({
       success: true,
       component: componentData,
-      liveUrl: `/live/${componentId}`,
+      liveUrl: `/live/${project.id}`,
+      siteUrl: `/site/${project.id}`,
     })
   } catch (error) {
     console.error('Gemini API error:', error)
