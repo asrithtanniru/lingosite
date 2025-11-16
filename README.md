@@ -1,36 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# LingoSite
 
-## Getting Started
+LingoSite is an AI-powered platform designed to help students, educators, and content creators generate meaningful learning content and instantly translate it into multiple languages. The platform focuses on simplifying multilingual creativity through a clean workflow and modern AI-powered interactions.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### 🌍 Live Website  
+https://lingosite.vercel.app/
+
+### 🎥 Demo Video  
+https://youtu.be/8BPkrrkW6tU?si=jszDOCaRKsSZDGsa
+
+---
+
+## 🚀 Features
+
+- AI-based content generation from user prompts
+- Multi-language translation support
+- Modern and responsive user experience
+- Built using Next.js App Router for high performance
+- Built-in API routes for backend operations
+- Fully deployable to Vercel
+
+---
+
+## 🧠 Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Framework | Next.js 14 (App Router) |
+| Styling | Tailwind CSS |
+| AI Integration | Lingo API / Custom AI API |
+| State Management | React Hooks |
+| Deployment | Vercel |
+
+---
+
+## 📦 Installation & Setup
+
+Clone the repository:
+
+```sh
+git clone https://github.com/your-username/lingosite.git
+cd lingosite
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file and add:
 
-## Learn More
+```
+NEXT_PUBLIC_LINGO_API_KEY=your_key_here
+NEXT_PUBLIC_BACKEND_URL=http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
+Run development mode:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```sh
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Build production version:
 
-## Deploy on Vercel
+```sh
+npm run build
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Start production server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```sh
+npm start
+```
+
+---
+
+## 📁 Project Structure
+
+```
+/
+├── app/
+│   ├── api/
+│   ├── components/
+│   ├── hooks/
+│   └── page.jsx
+├── public/
+├── styles/
+└── package.json
+```
+
+---
+
+## 🧪 Roadmap / Future Enhancements
+
+- Supabase authentication (Login + Accounts)
+- Store generated content in a database
+- Export to PDF, text, or audio formats
+- AI-powered voice generation for songs/lessons
+- Public shareable content links
+- Classroom mode / collaboration
+
+---
+
+## 🤝 Contributing
+
+Contributions, ideas, and improvements are always welcome.
+
+To contribute:
+
+```sh
+git checkout -b feature-name
+# make updates
+git commit -m "Added new feature"
+git push origin feature-name
+```
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
