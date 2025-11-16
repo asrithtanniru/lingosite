@@ -26,12 +26,10 @@ export function GeneratedSiteViewer({
     const trimmedLocalized = localizedCode?.trim?.() ?? ''
     const hasLocalizedVariant =
       Boolean(trimmedLocalized.length > 0) && trimmedLocalized !== trimmedSource
-    const activeCode =
-      view === 'localized' && hasLocalizedVariant && language !== 'en' ? localizedCode! : sourceCode
 
     const code = `function Component() {
   return (
-    ${activeCode}
+    ${sourceCode}
   );
 }
 
@@ -72,12 +70,23 @@ render(<Component />);`
         </div>
       </div>
 
-      <div className="border-2 border-border rounded-base bg-white p-8 min-h-[600px]">
-        <LiveProvider code={wrappedCode} noInline={true}>
-          <LivePreview />
-          <LiveError className="mt-4 p-4 bg-red-50 border-2 border-red-500 rounded text-red-800 text-sm" />
-        </LiveProvider>
-      </div>
+      {view === 'source' && (
+        <div className="border-2 border-border rounded-base bg-white p-8 min-h-[600px]">
+          <LiveProvider code={wrappedCode} noInline={true}>
+            <LivePreview />
+            <LiveError className="mt-4 p-4 bg-red-50 border-2 border-red-500 rounded text-red-800 text-sm" />
+          </LiveProvider>
+        </div>
+      )}
+
+      {view === 'localized' && hasLocalized && (
+        <div className="border-2 border-border rounded-base bg-white p-8 min-h-[600px]">
+          <div
+            className="w-full h-full"
+            dangerouslySetInnerHTML={{ __html: localizedCode || sourceCode }}
+          />
+        </div>
+      )}
     </div>
   )
 }

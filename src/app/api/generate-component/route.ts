@@ -73,7 +73,8 @@ Return ONLY the JSX.`
 
     const componentData = {
       id: project.id,
-      code: localizedCode,
+      code: cleanCode,
+      localizedCode: targetLanguage !== sourceLocale ? localizedCode : null,
       prompt,
       projectName: project.name,
       language: targetLanguage,

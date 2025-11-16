@@ -43,6 +43,18 @@ function NewProjectPage() {
     }
   }, [searchParams, aiPrompt])
 
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+    const match = document.cookie.match(/(?:^|; )lingo-locale=([^;]+)/)
+    const localeFromCookie = match?.[1]
+    if (localeFromCookie) {
+      setGenerationLanguage(localeFromCookie)
+      if (!selectedLanguages.includes(localeFromCookie)) {
+        setSelectedLanguages((prev) => [...prev, localeFromCookie])
+      }
+    }
+  }, [selectedLanguages])
+
   const toggleLanguage = (code: string) => {
     if (selectedLanguages.includes(code)) {
       setSelectedLanguages(selectedLanguages.filter((l) => l !== code))

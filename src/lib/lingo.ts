@@ -1,17 +1,18 @@
-import { LingoDotDevEngine } from '@lingo.dev/_sdk'
+import { LingoDotDevEngine } from "lingo.dev/sdk"
 
 let engine: LingoDotDevEngine | null = null
 
 function getEngine() {
-  if (!process.env.LINGO_API_KEY) {
-    console.warn('LINGO_API_KEY is not set. Falling back to source JSX.')
+  const apiKey = process.env.LINGODOTDEV_API_KEY || process.env.LINGO_API_KEY
+
+  if (!apiKey) {
+    console.warn('Lingo.dev API key is not set. Falling back to source JSX.')
     return null
   }
 
   if (!engine) {
     engine = new LingoDotDevEngine({
-      apiKey: process.env.LINGO_API_KEY,
-      apiUrl: process.env.LINGO_API_URL,
+      apiKey,
     })
   }
 

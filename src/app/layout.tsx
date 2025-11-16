@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { Space_Grotesk } from 'next/font/google'
-import { LingoProvider, loadDictionary } from '@lingo.dev/_react/rsc'
+import { LingoProvider, loadDictionary } from 'lingo.dev/react/rsc'
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
