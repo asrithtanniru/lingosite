@@ -1,43 +1,55 @@
-# LingoSite
+# LingoSite: Multilingual Website SaaS Platform
 
-LingoSite is an AI-powered platform designed to help students, educators, and content creators generate meaningful learning content and instantly translate it into multiple languages. The platform focuses on simplifying multilingual creativity through a clean workflow and modern AI-powered interactions.
+LingoSite is an AI-powered SaaS platform enabling users such as NGOs, educators, content creators, small business, startups to effortlessly create multilingual websites, landing pages, and web apps with zero coding or translation burden. The platform leverages Lingo Products(Compiler,CLI) and large language models (LLMs) to generate and translate site content automatically, making multilingual publishing seamless and accessible.
 
----
+***
 
-### 🌍 Live Website  
-https://lingosite.vercel.app/
+## 🌍 Live Website  
+[https://lingosite.vercel.app/](https://lingosite.vercel.app/)
 
-### 🎥 Demo Video  
-https://youtu.be/8BPkrrkW6tU?si=jszDOCaRKsSZDGsa
+## 🎥 Demo Video  
+[https://youtu.be/8BPkrrkW6tU?si=jszDOCaRKsSZDGsa](https://youtu.be/8BPkrrkW6tU?si=jszDOCaRKsSZDGsa)
 
----
+***
 
-## 🚀 Features
+## 🚀 Core Features
 
-- AI-based content generation from user prompts
-- Multi-language translation support
-- Modern and responsive user experience
-- Built using Next.js App Router for high performance
-- Built-in API routes for backend operations
-- Fully deployable to Vercel
+- AI-driven content generation from user prompts via LLM
+- Seamless Lingo-powered multi-language translation of all site content
+- JSX UI component generation by LLM, then translated by Lingo Compiler
+- Generated site JSX stored in database keyed by unique site code
+- Publicly accessible sites served at unique routes, e.g. `/site/[site-code]`
+- Modern, responsive UI with Next.js App Router and React Hooks
+- Fully deployable on Vercel with built-in backend API routes
 
----
+***
+
+## 🧰 How It Works: SaaS Multilingual Site Generation
+
+1. Users create site content in their primary language using prompts.
+2. An LLM generates the JSX structure for the site UI based on the content.
+3. The entire JSX code is translated into the desired language by the Lingo translation API, ensuring all text and UI elements are localized.
+4. The translated JSX is stored in the platform's database, accessible via a unique site code.
+5. Each generated site is publicly viewable via a unique URL route like `/site/zqdgdja`.
+6. Users can share, view, and navigate these multilingual websites effortlessly.
+
+***
 
 ## 🧠 Tech Stack
 
-| Category | Technology |
-|----------|------------|
-| Framework | Next.js 14 (App Router) |
-| Styling | Tailwind CSS |
-| AI Integration | Lingo API / Custom AI API |
-| State Management | React Hooks |
-| Deployment | Vercel |
+| Category        | Technology                  |
+|-----------------|-----------------------------|
+| Framework       | Next.js 54 (App Router)     |
+| Styling         | Tailwind CSS                |
+| AI & Translation| Lingo / Custom AI API   |
+| Deployment      | Vercel                     |
+| Database        | Supabase      |
 
----
+***
 
-## 📦 Installation & Setup
+## ⚙️ Installation & Setup
 
-Clone the repository:
+Clone repository:
 
 ```sh
 git clone https://github.com/your-username/lingosite.git
@@ -50,7 +62,7 @@ Install dependencies:
 npm install
 ```
 
-Create a `.env.local` file and add:
+Create `.env.local` file with keys:
 
 ```
 NEXT_PUBLIC_LINGO_API_KEY=your_key_here
@@ -75,7 +87,7 @@ Start production server:
 npm start
 ```
 
----
+***
 
 ## 📁 Project Structure
 
@@ -84,43 +96,36 @@ npm start
 ├── app/
 │   ├── api/
 │   ├── components/
-│   ├── hooks/
 │   └── page.jsx
 ├── public/
-├── styles/
 └── package.json
 ```
 
----
+***
 
-## 🧪 Roadmap / Future Enhancements
+## 🧪 Roadmap & Future Enhancements
 
-- Supabase authentication (Login + Accounts)
-- Store generated content in a clean database
-- Export to PDF, text, or audio formats
-- AI-powered voice generation for songs/lessons
-- Public shareable content links
-- Classroom mode / collaboration
+- Export options: PDF, text, audio formats for content
+- AI-powered voice generation for songs and lessons
+- Classroom/collaborative editing and viewing mode
+- Website builder improvements with drag-and-drop UI
+- Expanded deployment capabilities including custom subdomains and translation workflows
 
----
+***
 
-## 🤝 Contributing
+## 🤝 Contribution Guidelines
 
-Contributions, ideas, and improvements are always welcome.
-
-To contribute:
+Contributions, ideas, and improvements are welcome! To contribute:
 
 ```sh
 git checkout -b feature-name
-# make updates
-git commit -m "Added new feature"
+# make your updates
+git commit -m "Add new feature"
 git push origin feature-name
 ```
 
----
+***
 
 ## 📜 License
 
 This project is licensed under the **MIT License**.
-
----
